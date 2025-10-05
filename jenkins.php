@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<?php
+include "dbconfig.php";
+session_start();
+$inactivity_time = 10 * 60;
+if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp']) > $inactivity_time) {
+    session_unset();
+    session_destroy();
+    header("Location: joinUs.php");
+    exit();
+  } else {
+    session_regenerate_id(true);
+    $_SESSION['last_timestamp'] = time();
+  }
+?>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> JST - Jaladhi Soft Technology </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+     <link href="img/JST.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript">
+		function disableBack() { window.history.forward(); }
+		setTimeout("disableBack()", 0);
+		window.onunload = function () { null };
+		document.addEventListener('contextmenu', event => event.preventDefault());
+	</script>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.php" class="navbar-brand">
+                <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+					<a href="jstHome.php" class="nav-item nav-link active"> Java </a>
+                    <a href="pyHome.php" class="nav-item nav-link"> Python </a>
+					<a href="htmlHome.php" class="nav-item nav-link"> HTML </a>
+                    <a href="dbHome.php" class="nav-item nav-link"> Data Base </a>
+					<a href="gkHome.php" class="nav-item nav-link"> General Knowledge </a>
+                </div>
+                <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <div class="container-xxl py-5 page-header position-relative mb-5">
+            <div class="container py-5">
+                <h1 class="display-2 text-white animated slideInDown mb-4"> Java Training </h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Java</a></li>
+                        <li class="breadcrumb-item"><a href="#">J2SE</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page"> Jenkins </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h1 class="mb-3"> Jenkins </h1>
+                </div>
+            </div>
+        </div>
+               
+        <div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Jenkins </h4>
+                    <p class="mb-4" align="justify"> Jenkins was built by Kohsuke Kawaguchi in 2004 and is one of the most popular CI/CD tools for Continuous Integration and Continuous Delivery. Jenkins is a hub for automating the various aspects of the software development lifecycle which includes building, testing, and deploying the application. We can call Jenkins a pipeline orchestrator where the developer can manage the pipelines of the projects that they have been developed. </p>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Core Concepts of Jenkins </h4>
+                    <table class="table table-bordered">
+						<tbody>
+							<tr> <td align="justify"> Project / Job </td> <td align="justify"> A Project or a Job is a collection of configurable instructions used for building developed source code, testing, collecting artifacts, sending notifications in emails, <br/> deploying in required environments, and much more. </td> </tr>
+							<tr> <td align="justify">  Pipelines </td> <td align="justify"> A Jenkins pipeline is set of instructions and build steps configured in Jenkins to run all the processes in multiple environments in various steps. </td> </tr>
+							<tr> <td align="justify"> Build Executor Status </td> <td align="justify"> All the currently running builds/jobs are displayed in this section. </td> </tr>
+							<tr> <td align="justify"> Build Queue Status </td> <td align="justify"> All the scheduled builds/jobs in a queue and are yet to run are displayed in this section of the home page. </td> </tr>
+							<tr> <td align="justify"> Plugins </td> <td align="justify"> More than 1500 community-contributed plugins in Jenkins support building software varieties, automate tests, and deploy projects for production releases. </td> </tr>
+							<tr> <td align="justify"> Master – Agent </td> <td align="justify"> Executes in remote parallel machines for shorter build and test running time using additional resources in the cloud. </td> </tr>
+						</tbody> 
+					</table>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Continuous Integration (CI) </h4>
+                    <p class="mb-4" align="justify"> Continuous Integration (CI) our team members can automate project workflows and simplify the process of building, testing, and deployment of software to different stages in the environment. Here environments are nothing but Staging, Dev, Test, QA, SIT, UAT and Prod. Continuous Integration (CI) will improve communication, track changes, fix bugs, and reduce conflicts in the code. </p>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Continuous Delivery  (CD) </h4>
+                    <p class="mb-4" align="justify"> Continuous Delivery (CD) in Agile methodology is a software delivery process of short iterations and releasing new functionality once, it is ready for release. CD involves the seamless and automated delivery of software in a small and incremental way. The primary goal of continuous delivery is to enable frequent release of software into production rapidly and predictably aligned with the principles of agile methodologies. </p>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Jenkins Benefits </h4>
+                    <table class="table table-bordered">
+						<tbody>
+							<tr> <td align="justify"> Master CI/CD Pipelines </td> <td align="justify"> Automate building, testing, and deploying code efficiently. </td> </tr>
+							<tr> <td align="justify"> In-Demand DevOps Skill </td> <td align="justify"> Jenkins knowledge is valuable for roles like DevOps Engineer and Build Engineer. </td> </tr>
+							<tr> <td align="justify"> Automate Repetitive Tasks </td> <td align="justify"> Save time and reduce human error in software development. </td> </tr>
+							<tr> <td align="justify"> Wide Tool Integration </td> <td align="justify"> Works with numerous tools like Git, Maven, Docker, and Kubernetes.</td> </tr>
+							<tr> <td align="justify"> Boost Team Collaboration </td> <td align="justify"> Facilitates continuous integration and feedback, improving team workflows. </td> </tr>
+							<tr> <td align="justify"> Scalability </td> <td align="justify"> Supports large-scale projects with distributed builds. </td> </tr>
+							<tr> <td align="justify"> Career Growth </td> <td align="justify"> High demand for Jenkins expertise opens better job opportunities. </td> </tr>
+						</tbody> 
+					</table>
+                </div>
+            </div>
+        </div>
+		
+		<br/> <br/> <br/> <br/> 
+		<div class="container-fluid bg-dark text-white-50 footer mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center">
+                <div class="row g-5">
+					<?php
+						$sql = "SELECT * FROM `socialmedia`";
+						$result = $conn->query($sql);
+						if ($result->num_rows > 0) {
+							while ($row = $result->fetch_assoc()) {
+					?>
+                    <div class="col-lg-2 col-md-6">
+                         <a href="<?php echo $row['SMURL']; ?>"> <h3 class="text-white mb-4"> <?php echo $row['SMNAME']; ?> </h3> </a>
+                    </div>
+					<?php       
+							}
+						}
+					?>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="copyright">
+                    <div class="row g-5">
+                        <div class="col-md-12 text-center mb-3 mb-md-0">
+                           2024 &copy;  All Copy Rights Reserved By <a class="border-bottom" href="#"> Jaladhi Soft Technology (JST) </a>. Designed, Developed &amp; Maintained By <a class="border-bottom" href="#"> Jaladhi Naga Vijay (JNV) </a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
