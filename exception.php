@@ -126,7 +126,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 		
 		<div class="container-xxl">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> Types of Exceptions : </h4>
 					<ol>
 						<li class="mb-2" align="justify"> Checked Exception </li>
@@ -156,7 +156,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 		
 		<div class="container-xxl">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> Types of Errors Represented by Exceptions </h4>
                     <p class="mb-4" align="justify"> Exceptions represent a wide variety of errors including, but not limited to : </p>
 					<ol>
@@ -172,7 +172,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 		
 		<div class="container-xxl">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> Keywords in Exception	 </h4>
                     <p class="mb-4" align="justify"> Java provides five keywords that are used to handle the exception. The following table describes each. </p>
 					<table class="table table-bordered">
@@ -193,7 +193,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 		
 		<div class="container-xxl">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> Rules for Exception Handling with respect to Method Overriding </h4>
                     <p class="mb-4" align="justify"> <b class="text-success"> Rule 1 : </b> If parent-class method doesn’t declare any exception </p>
 					<ol>
@@ -293,6 +293,25 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 							<tr> <td align="justify"> UnsupportedOperationException </td> <td align="justify"> An unsupported operation was encountered. </td> </tr>
 						</tbody> 
 					</table>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                     <table class="table table-borderless">
+                        <tbody align="left">
+                            <tr>   
+								<td> <a href="dataType.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+								      <i class="fa fa-arrow-left ms-3"></i> Data Types </a> </td> 
+								<td width="70%">  </td>	  
+								<td> <a href="string.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+							         String Class  <i class="fa fa-arrow-right ms-3"></i></a> 
+								 </td> 
+							</tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

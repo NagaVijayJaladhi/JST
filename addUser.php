@@ -46,7 +46,7 @@
 			
 			if ($result == TRUE) {
 			    $red_msg = "New Record Created Successfully. You can Login";
-			    header("location: joinUs.php");
+			    header("location: adminHome.php");
 			} else {
 			    $red_msg = "Oops! Something went Wrong. Please Try Again Later.";
 			}
@@ -98,11 +98,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.php" class="nav-item nav-link"> Home </a>
-                    <a href="about.php" class="nav-item nav-link"> About Us </a>
-                    <a href="training.php" class="nav-item nav-link"> Training </a>
-					<a href="development.php" class="nav-item nav-link"> Development </a>
-                    <a href="contact.php" class="nav-item nav-link"> Contact Us </a>
+                    <a href="user.php" class="nav-item nav-link active"> Add Users </a>
+                    <a href="viewUser.php" class="nav-item nav-link"> View Users </a>
+					<a href="adminHome.php" class="nav-item nav-link"> Admin Home </a>
                 </div>
                 <a href="joinUs.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Login <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -114,7 +112,7 @@
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#"> Home </a></li>
-                        <li class="breadcrumb-item"><a href="#"> Pages </a></li>
+                        <li class="breadcrumb-item"><a href="#"> Administration </a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page"> New User </li>
                     </ol>
                 </nav>

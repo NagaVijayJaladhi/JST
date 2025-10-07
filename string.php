@@ -384,6 +384,25 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                 </div>
             </div>
         </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                     <table class="table table-borderless">
+                        <tbody align="left">
+                            <tr>   
+								<td> <a href="exception.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+								      <i class="fa fa-arrow-left ms-3"></i> Exceptions </a> </td> 
+								<td width="70%">  </td>	  
+								<td> <a href="innerClass.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+							         Inner Class  <i class="fa fa-arrow-right ms-3"></i></a> 
+								 </td> 
+							</tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         
 		<br/> <br/> <br/> <br/> 
 		<div class="container-fluid bg-dark text-white-50 footer mt-5 wow fadeIn" data-wow-delay="0.1s">

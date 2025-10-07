@@ -66,6 +66,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                 <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
+		
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
                 <h1 class="display-2 text-white animated slideInDown mb-4">Training</h1>
@@ -84,7 +85,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h1 class="mb-3"> Java Inner Class </h1>
-                    <p class="mb-4" align="justify"> <b> Java Inner Class </b> is defined inside the body of another class. Java inner class can be declared private, public, protected, or with default access whereas an outer class can have only public or default access. </p>
+                    <p class="mb-4" align="justify"> <b> Java Inner Class </b> is defined inside the body of another class. Java inner class can be declared private, public, protected, or with default access whereas an outer class can have only public or default access. As with instance methods and variables, an inner class is associated with an instance of its enclosing class and has direct access to that object's methods and fields. Also, because an inner class is associated with an instance, it cannot define any static members itself. </p>
                 </div>
             </div>
         </div>
@@ -104,10 +105,54 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> Types of Inner Classes : </h4>
-                    <p class="mb-4" align="justify"> 1. Nested Inner Class </p>
-                    <p class="mb-4" align="justify"> 2. Static Inner Class </p>
-                    <p class="mb-4" align="justify"> 3. Anonymous Inner Class </p>
-                    <p class="mb-4" align="justify"> 4. Method Local Inner Class </p>
+                    <p class="mb-4" align="justify"> <b> Nested Inner Class : </b> It can access any private instance variable of the outer class. Like any other instance variable, we can have access modifier private, protected, public and default modifier. Like class, an interface can also be nested and can have access specifiers. </p>
+                    <p class="mb-4" align="justify"> <b> Static Inner Class : </b> Static Inner Class type of inner class is also defined at a class's member level but is declared static. This means it can be instantiated without an instance of the outer class. It cannot access non-static members of the outer class. </p>
+                    <p class="mb-4" align="justify"> <b> Anonymous Inner Class : </b> This is a special type of local inner class that does not have a name.It is typically used for implementing interfaces or extending classes on the fly. </p>
+                    <p class="mb-4" align="justify"> <b> Method Local Inner Class : </b> Method Local Inner Class is the most common type of inner class. It is defined at the member level of a class, just like methods or variables. It can access all members of the outer class (including private members) and can be instantiated only with an instance of the outer class. </p>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Why Use Nested Classes ? </h4>
+                    <p class="mb-4" align="justify"> <b> It is a way of logically grouping classes that are only used in one place : </b> If a class is useful to only one other class, then it is logical to embed it in that class and keep the two together. Nesting such "helper classes" makes their package more streamlined. </p>
+                    <p class="mb-4" align="justify"> <b> It increases Encapsulation : </b> Consider two top-level classes, A and B, where B needs access to members of A that would otherwise be declared private. By hiding class B within class A, A's members can be declared private and B can access them. In addition, B itself can be hidden from the outside world. </p>
+                    <p class="mb-4" align="justify"> <b> It can lead to more readable and maintainable code: </b> Nesting small classes within top-level classes places the code closer to where it is used. </p>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Benefits of using Inner Classes </h4>
+                    <p class="mb-4" align="justify"> <b> Encapsulation : </b> Inner classes can access private variables and methods of the outer class. This helps to achieve encapsulation and improves code readability. </p>
+                    <p class="mb-4" align="justify"> <b> Code Organization : </b> Inner classes allow you to group related code together in one place. This makes your code easier to understand and maintain. </p>
+                    <p class="mb-4" align="justify"> <b> Better Access Control : </b> Inner classes can be declared as private, which means that they can only be accessed within the outer class. This provides better access control and improves code security. </p>
+					<p class="mb-4" align="justify"> <b> Callbacks : </b> Inner classes are often used for implementing callbacks in event-driven programming. They provide a convenient way to define and implement a callback function within the context of the outer class. </p>
+					<p class="mb-4" align="justify"> <b> Polymorphism : </b> Inner classes can be used to implement polymorphism. You can define a class hierarchy within the outer class and then create objects of the inner classes that implement the different subclasses. </p>
+					<p class="mb-4" align="justify"> <b> Reduced Code Complexity : </b> Inner classes can reduce the complexity of your code by encapsulating complex logic and data structures within the context of the outer class. </p>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                     <table class="table table-borderless">
+                        <tbody align="left">
+                            <tr>   
+								<td> <a href="string.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+								      <i class="fa fa-arrow-left ms-3"></i> String Class </a> </td> 
+								<td width="70%">  </td>	  
+								<td> <a href="iostreams.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+							         Input / Output  <i class="fa fa-arrow-right ms-3"></i></a> 
+								 </td> 
+							</tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

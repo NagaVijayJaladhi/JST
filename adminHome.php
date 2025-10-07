@@ -19,11 +19,11 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 
 <head>
     <meta charset="utf-8">
-    <title>JST - Jaladhi Soft Technology </title>
+    <title> JST - Jaladhi Soft Technology </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/JST.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
@@ -57,42 +57,60 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="jstHome.php" class="nav-item nav-link"> Java </a>
-                    <a href="pyHome.php" class="nav-item nav-link"> Python </a>
-					<a href="htmlHome.php" class="nav-item nav-link"> HTML </a>
-                    <a href="dbHome.php" class="nav-item nav-link"> Data Base </a>
-					<a href="gkHome.php" class="nav-item nav-link"> General Knowledge </a>
+                    <a href="adminHome.php" class="nav-item nav-link"> Admin Home </a>
+                    <a href="jstHome.php" class="nav-item nav-link"> Java Home </a>
+					<a href="pyHome.php" class="nav-item nav-link"> Python Home </a>
                 </div>
                 <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
-
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
-                <h1 class="display-2 text-white animated slideInDown mb-4">404 Error</h1>
+                <h1 class="display-2 text-white animated slideInDown mb-4"> Java Training </h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#"> Home </a></li>
-                        <li class="breadcrumb-item"><a href="#"> Pages </a></li>
+                        <li class="breadcrumb-item"><a href="#"> Administration </a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page"> <?php echo $_SESSION["username"]; ?> </li>
                     </ol>
                 </nav>
             </div>
         </div>
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                        <h1 class="display-1"> COMING SOON </h1>
-                        <h1 class="mb-4"> Page is Under Development Stage </h1>
-                        <p class="mb-4">We are Sorry, The page you have looked for does not exist in our Web Site! Our Web Site Under Construction, follow us for update now ! </p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="jstHome.php"> Go Back To Home </a>
-                    </div>
+		
+		<div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3"> Administration Dash Board </h1>
+                    <p> </p>
                 </div>
+				<br/>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="viewUser.php"> Users </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="abbreviation.php"> Abbreviation </a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="countries.php"> Countries </a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
             </div>
         </div>
-      <div class="container-fluid bg-dark text-white-50 footer mt-5 wow fadeIn" data-wow-delay="0.1s">
+		
+		<div class="container-fluid bg-dark text-white-50 footer mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container text-center">
                 <div class="row g-5">
 					<?php
@@ -114,7 +132,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                 <div class="copyright">
                     <div class="row g-5">
                         <div class="col-md-12 text-center mb-3 mb-md-0">
-                           2025 &copy;  All Copy Rights Reserved By <a class="border-bottom" href="#"> Jaladhi Soft Technology (JST) </a>. Designed, Developed &amp; Maintained By <a class="border-bottom" href="#"> Jaladhi Naga Vijay (JNV) </a>.
+                           2024 &copy;  All Copy Rights Reserved By <a class="border-bottom" href="#"> Jaladhi Soft Technology (JST) </a>. Designed, Developed &amp; Maintained By <a class="border-bottom" href="#"> Jaladhi Naga Vijay (JNV) </a>.
                         </div>
                     </div>
                 </div>

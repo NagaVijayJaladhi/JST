@@ -90,7 +90,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="abbreviation.php"> Abbreviation </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="viewAbbreviation.php"> Abbreviation </a>
                             </div>
                         </div>
                     </div>

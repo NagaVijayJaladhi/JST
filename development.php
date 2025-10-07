@@ -38,7 +38,7 @@ include "dbconfig.php";
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -46,13 +46,13 @@ include "dbconfig.php";
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.php" class="nav-item nav-link"> Home </a>
-                    <a href="about.php" class="nav-item nav-link"> About Us </a>
-                    <a href="training.php" class="nav-item nav-link"> Training </a>
-					<a href="development.php" class="nav-item nav-link active"> Development </a>
-                    <a href="contact.php" class="nav-item nav-link"> Contact Us </a>
+                    <a href="home" class="nav-item nav-link"> Home </a>
+                    <a href="about" class="nav-item nav-link"> About Us </a>
+                    <a href="training" class="nav-item nav-link"> Training </a>
+					<a href="development" class="nav-item nav-link active"> Development </a>
+                    <a href="contact" class="nav-item nav-link"> Contact Us </a>
                 </div>
-                <a href="joinUs.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="joinUs" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <div class="container-xxl py-5 page-header position-relative mb-5">
@@ -90,9 +90,9 @@ include "dbconfig.php";
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4"> Android Application </h1>
-                                <p class="mb-4" align="justify"> An Android app is fundamentally the key to capture an important portion of the mobile market which is increasing daily. It let the business to reach out to more number of customers. Android applications are usually developed in the Java language using the Android Software Development Kit. </p>
-								<p class="mb-4" align="justify"> Once developed, Android applications can be packaged easily and sold out either through a store such as Google Play, SlideME, Opera Mobile Store, Mobango, F-droid and the Amazon Appstore. Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies. </p> 
-								<p class="mb-4" align="justify"> Android Application is a software designed to run on an Android device or emulator. The term also refers to an APK file which stands for Android package. This file is a Zip archive containing app code, resources, and meta information. Android apps can be written in Java and are run inside Virtual Machine. The official development environment is Android Studio. </p>
+                                <p class="mb-4" align="justify"> An <b> Android Application </b> is fundamentally the key to capture an important portion of the mobile market which is increasing daily. It let the business to reach out to more number of customers. Android applications are usually developed in the Java language using the Android Software Development Kit. </p>
+								<p class="mb-4" align="justify"> Once developed, <b> Android Applications </b> can be packaged easily and sold out either through a store such as Google Play, SlideME, Opera Mobile Store, Mobango, F-droid and the Amazon Appstore. Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies. </p> 
+								<p class="mb-4" align="justify"> <b> Android Application </b> is a software designed to run on an Android device or emulator. The term also refers to an APK file which stands for Android package. This file is a Zip archive containing app code, resources, and meta information. Android apps can be written in Java and are run inside Virtual Machine. The official development environment is Android Studio. </p>
                             </div>
                         </div>
                     </div>
@@ -106,10 +106,14 @@ include "dbconfig.php";
                 <div class="row mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
                         <h1 class="mb-4"> Web Application </h1>
-                        <p class="mb-4" align="justify"> A Web Application ((Online/Offline) is software that runs in your web browser. Businesses have to exchange information and deliver services remotely. They use web applications to connect with customers conveniently and securely. The most common website features like shopping carts, product search and filtering, instant messaging, and social media newsfeeds are web applications in their design. They allow you to access complex functionality without installing or configuring software. Web applications have several benefits, with almost all major enterprises utilizing them as part of their user offerings. </p>
-						<p class="mb-4" align="justify"> <b> Accessibility </b> Web apps can be accessed from all web browsers and across various personal and business devices. Teams in different locations can access shared documents, content management systems, and other business services through subscription-based web applications. </p> 
-						<p class="mb-4" align="justify"> <b> Efficient Development </b> As detailed, the development process for web apps is relatively simple and cost-effective for businesses. Small teams can achieve short development cycles, making web applications an efficient and affordable method of building computer programs. In addition, because the same version works across all modern browsers and devices, you won't have to create several different iterations for multiple platforms. </p>
+                        <p class="mb-4" align="justify"> A <b> Web Application (Online/Offline) </b> is software that runs in your web browser. Businesses have to exchange information and deliver services remotely. They use web applications to connect with customers conveniently and securely. The most common website features like shopping carts, product search and filtering, instant messaging, and social media newsfeeds are web applications in their design. They allow you to access complex functionality without installing or configuring software. <b> Web Application </b> have several benefits, with almost all major enterprises utilizing them as part of their user offerings. </p>
+						
+						<p class="mb-4" align="justify"> <b> Accessibility </b> Web Application can be accessed from all web browsers and across various personal and business devices. Teams in different locations can access shared documents, content management systems, and other business services through subscription-based web applications. </p> 
+						
+						<p class="mb-4" align="justify"> <b> Efficient Development </b> As detailed, the development process for Web Application is relatively simple and cost-effective for businesses. Small teams can achieve short development cycles, making web applications an efficient and affordable method of building computer programs. In addition, because the same version works across all modern browsers and devices, you won't have to create several different iterations for multiple platforms. </p>
+						
 						<p class="mb-4" align="justify"> <b> User Simplicity </b> Web Applications don't require users to download them, making them easy to access while eliminating the need for end-user maintenance and hard drive capacity. Web applications automatically receive software and security updates, meaning they are always up to date and less at risk of security breaches. </p> 
+						
 						<p class="mb-4" align="justify"> <b> Scalability </b> Businesses using web apps can add users as and when they need, without additional infrastructure or costly hardware. In addition, the vast majority of web application data is stored in the cloud, meaning your business won't have to invest in additional storage capacity to run web apps. </p>
                     </div>
                     <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s" style="min-height: 400px;">
@@ -136,7 +140,9 @@ include "dbconfig.php";
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4"> Website Design </h1>
                                 <p class="mb-4" align="justify"> Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate. Web designing essentially involves working on every attribute of the website that people interact with, so that the website is simple and efficient, allows users to quickly find the information they need, and looks visually pleasing. All these factors, when combined, decide how well the website is designed. </p>
+								
 								<p class="mb-4" align="justify"> With a well-designed website, it becomes easier to make a grand first impression. For brands, it is all about how potential customers or clients view their business, and this is greatly influenced by how they view their website. Your website represents your brand, and when you focus on web designing, it can help you create a compelling and powerful first impression. </p> 
+								
 								<p class="mb-4" align="justify"> Several key assets of your brand, such as the logo, color scheme, and fonts can ensure your audience remembers your brand and easily differentiates it from thousands of others. A professional web designer takes into account all the unique aspects of your business and blends them into your website to add to your brand credibility and portray consistency. </p>
                             </div>
                         </div>
@@ -155,6 +161,13 @@ include "dbconfig.php";
 						<p align="justify"> JST Projects is applying its way through, to help with the best of service for students in Implementing CSE Projects in skill sets – Data Sciences, Machine Learning, Artificial Intelligence, Deep Learning, Android, Big Data, Block Chain and Java Related Technologies with the best equipment which drives them to inspiration. </p>
 
 						<p align="justify"> We serve students with Implementing in Students self ideas / Abstracts / Thoughts, and we are thrilled to be a part of the Student Faternity.We hope you appreciate our IT Projects, as much as we enjoy offering them to you. And for any questions and guidance on our projects, please do revert to us. </p>
+						
+						<div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="projects.php"> View List of Projects </a>
+                            </div>
+                        </div>
+						
                     </div>
                     <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s" style="min-height: 400px;">
                         <div class="row">

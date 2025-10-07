@@ -3,34 +3,34 @@ require_once "dbconfig.php";
 require_once "session.php";
 $error = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-echo "3";
 	$email = trim($_POST['email']);
     $password = trim($_POST['password']);
-echo "4";
+	$admin = "Admin";
+	$customer = "Customer";
+	
     if (empty($email)) {
         $error .= '<p class="error">Please Registered Enter Email.</p>';
     }
-echo "5";
+	
     if (empty($password)) {
         $error .= '<p class="error">Please Enter Your Password.</p>';
     }
-echo "6";
+	
 	if (empty($error)) {
-		echo "7";
-		$sql = "SELECT * FROM `user` WHERE EMAIL = '$email' AND PASSWORD = '$password'";
-		echo $sql;
+		$sql = "SELECT * FROM user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
 		$result = $conn->query($sql);
 		echo $result->num_rows;
 		if ($result->num_rows == 1) {
-			echo "8";
 			if ($row = $result->fetch_assoc()) {
-				echo "9";
-				echo $password;
-				echo $row['PASSWORD'];
-				if (strcmp($password,$row['PASSWORD']) == 0) {
-					echo "10";
+				if (strcmp($password,$row['PASSWORD']) == 0 && strcmp($customer,$row['ROLE']) == 0) {
 					$_SESSION["username"] = $row['USERNAME'];
 					header("location: jstHome.php");
+                    exit;
+				}
+				
+				if (strcmp($password,$row['PASSWORD']) == 0 && strcmp($admin,$row['ROLE']) == 0) {
+					$_SESSION["username"] = $row['USERNAME'];
+					header("location: adminHome.php");
                     exit;
 				}
 			}

@@ -401,6 +401,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 							<tr> <td align="justify"> SQLTransientConnectionException </td> <td align="justify"> The subclass of SQLException for the SQLState class value '08', or under vendor-specified conditions. </td> </tr>
 							<tr> <td align="justify"> SQLTransientException </td> <td align="justify"> The subclass of SQLException is thrown in situations where a previously failed operation might be able to succeed when the operation is retried without any intervention by application-level functionality. </td> </tr>
 							<tr> <td align="justify"> SQLWarning </td> <td align="justify"> An exception that provides information on database access warnings. </td> </tr>
+						</tbody>
 					</table>
                 </div>
             </div>

@@ -46,7 +46,7 @@
 			
 			if ($result == TRUE) {
 			    $red_msg = "New Record Created Successfully. You can Login";
-			    header("location: joinUs.php");
+			    header("location: adminHome.php");
 			} else {
 			    $red_msg = "Oops! Something went Wrong. Please Try Again Later.";
 			}
@@ -98,11 +98,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.php" class="nav-item nav-link"> Home </a>
-                    <a href="about.php" class="nav-item nav-link"> About Us </a>
-                    <a href="training.php" class="nav-item nav-link"> Training </a>
-					<a href="development.php" class="nav-item nav-link"> Development </a>
-                    <a href="contact.php" class="nav-item nav-link"> Contact Us </a>
+                    <a href="user.php" class="nav-item nav-link active"> Add Users </a>
+                    <a href="viewUser.php" class="nav-item nav-link"> View Users </a>
+					<a href="adminHome.php" class="nav-item nav-link"> Admin Home </a>
                 </div>
                 <a href="joinUs.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Login <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -114,7 +112,7 @@
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#"> Home </a></li>
-                        <li class="breadcrumb-item"><a href="#"> Pages </a></li>
+                        <li class="breadcrumb-item"><a href="#"> Administration </a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page"> New User </li>
                     </ol>
                 </nav>
@@ -124,7 +122,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3"> New User Registration </h1>
+                    <h1 class="mb-3"> Update User Registration </h1>
                 </div>
                 <div class="bg-light rounded">
                     <div class="row g-0">
@@ -133,6 +131,16 @@
                                 <img class="position-absolute w-100 h-100 rounded" src="img/newUser.jpg" style="object-fit: cover;">
                             </div>
                         </div>
+						<?php
+							include "dbconfig.php";
+							$sql_query = "SELECT * FROM results WHERE id = ".$_GET["id"];
+							if ($result = $conn ->query($sql_query)) {
+								while ($row = $result -> fetch_assoc()) { 
+									$Id = $row['id'];
+									$Name = $row['name'];
+									$Grade = $row['class'];
+									$Marks = $row['marks'];
+						?>
                         <div class="col-lg-8 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h6 style="color:red"> <?php echo $red_msg; ?> </h6> 

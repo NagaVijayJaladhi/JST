@@ -431,7 +431,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 		<div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3"> Question and Answers </h1>
+                    <h1 class="mb-3"> Question and Answers (Q&amp;A) </h1>
                     <p> </p>
                 </div>
 				<br/>
@@ -446,7 +446,47 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="selftest.php"> Self Test Skill </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="404.php"> JDBC Q&amp;A </a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="jsqaa.php"> Servlets Q&amp;A </a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+		
+		<div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3"> Multiple Choice Questions (MCQ) </h1>
+                    <p> </p>
+                </div>
+				<br/>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="qesans.php"> Self Test Skill </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="404.php"> JDBC Test </a>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="jsqaa.php"> Servlets Test </a>
                             </div>
                         </div>
                     </div>

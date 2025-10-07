@@ -97,14 +97,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>		
 							<?php
-								$sql = "SELECT * FROM `worldhistory` WHERE era ='BCE'";
+								$sql = "SELECT ROW_NUMBER() OVER (ORDER BY HYEAR) AS NO,HYEAR,EVENTS FROM historytimeline WHERE ERA = 'BCE' AND PLACE = 'WORLD'";
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
 							?>
 							<tr>
-								<td align="justify"> <?php echo $row['WHTID']; ?> </td> 
-								<td align="justify"> <?php echo $row['TIME']; ?> </td> 
+								<td align="justify"> <?php echo $row['NO']; ?> </td> 
+								<td align="justify"> <?php echo $row['HYEAR']; ?> </td> 
 								<td align="justify"> <?php echo $row['EVENTS']; ?> </td> 
 							</tr>
 							<?php       
@@ -118,14 +118,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>		
 							<?php
-								$sql = "SELECT * FROM `worldhistory` WHERE era ='CE'";
+								$sql = "SELECT ROW_NUMBER() OVER (ORDER BY HYEAR) AS NO,HYEAR,EVENTS FROM historytimeline WHERE ERA = 'CE' AND PLACE = 'WORLD'";
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
 							?>
 							<tr>
-								<td align="justify"> <?php echo $row['WHTID']; ?> </td> 
-								<td align="justify"> <?php echo $row['TIME']; ?> </td> 
+								<td align="justify"> <?php echo $row['NO']; ?> </td> 
+								<td align="justify"> <?php echo $row['HYEAR']; ?> </td>  
 								<td align="justify"> <?php echo $row['EVENTS']; ?> </td> 
 							</tr>
 							<?php       

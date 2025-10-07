@@ -73,7 +73,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Java</a></li>
-                        <li class="breadcrumb-item"><a href="#">J2EE</a></li>
+                        <li class="breadcrumb-item"><a href="#">J2SE</a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page"> Java Question &amp; Answers </li>
                     </ol>
                 </nav>
@@ -93,7 +93,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 1. What is a Java Refresher ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> A Java program is mostly a collection of objects talking to other objects by invoking each other's methods. Every object is of a certain type, and that type is defined by a class or an interface. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> A Java program is mostly a collection of objects talking to other objects by invoking each other's methods. Every object is of a certain type, and that type is defined by a class or an interface. </p>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 2. What is Java Virtual Machine (JVM) ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> JVM is an abstract computing machine. JVM is a platform independent execution environment that converts Java byte code into machine language and executes it. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> JVM is an abstract computing machine. JVM is a platform independent execution environment that converts Java byte code into machine language and executes it. </p>
                 </div>
             </div>
         </div>
@@ -111,8 +111,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 3. What is a Class ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> A Template that describes the kinds of state and behavior that objects of its type support. </p>
-					 <p class="mb-4" align="justify"> <b> Answers : </b> A Class is group of objects that have common property. It is a template or blue print from which objects are created. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> A Template that describes the kinds of state and behavior that objects of its type support. </p>
+					 <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> A Class is group of objects that have common property. It is a template or blue print from which objects are created. </p>
                 </div>
             </div>
         </div>
@@ -121,8 +121,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 4. What is an Object ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> At runtime, when the Java Virtual Machine (JVM) encounters the new keyword, it will use the appropriate class to make an object which is an instance of that class. That object will have its own state, and access to all of the behaviors defined by its class. </p>
-					 <p class="mb-4" align="justify"> <b> Answers : </b> A runtime entity that has state and behavior is known as an Object. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> At runtime, when the Java Virtual Machine (JVM) encounters the new keyword, it will use the appropriate class to make an object which is an instance of that class. That object will have its own state, and access to all of the behaviors defined by its class. </p>
+					 <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> A runtime entity that has state and behavior is known as an Object. </p>
                 </div>
             </div>
         </div>	
@@ -131,7 +131,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 5. What is a State (Instance Variables) ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Each object (instance of a class) will have its own unique set of instance variables as defined in the class. Collectively, the values assigned to an object's instance variables make up the object's state. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Each object (instance of a class) will have its own unique set of instance variables as defined in the class. Collectively, the values assigned to an object's instance variables make up the object's state. </p>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 6. What is a Behavior (Methods) ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> When a programmer creates a class, she creates methods for that class. Methods are where the class' logic is stored. Methods are where the real work gets done. They are where algorithms get executed, and data gets manipulated. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> When a programmer creates a class, she creates methods for that class. Methods are where the class' logic is stored. Methods are where the real work gets done. They are where algorithms get executed, and data gets manipulated. </p>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 7. What is a Encapsulation ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Encapsulation is the process of wrapping up of data and methods together into single unit. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Encapsulation is the process of wrapping up of data and methods together into single unit. </p>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 8. What is a Abstraction ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Abstraction is the process of hiding the implementation details and showing only functionalities to the user. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Abstraction is the process of hiding the implementation details and showing only functionalities to the user. </p>
                 </div>
             </div>
         </div>
@@ -167,8 +167,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 9. What is a Inheritance ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Inheritance is a mechanism in which one object acquires all the properties and behaviors of parent object. Inheritance represent IS-A relationship. </p>
-					<p class="mb-4" align="justify"> <b> Answers : </b> Inheritance is the method by which objects of one class get the properties of objects of another class. Inheritance represent IS-A relationship. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Inheritance is a mechanism in which one object acquires all the properties and behaviors of parent object. Inheritance represent IS-A relationship. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Inheritance is the method by which objects of one class get the properties of objects of another class. Inheritance represent IS-A relationship. </p>
                 </div>
             </div>
         </div>
@@ -177,8 +177,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 10. What is a Polymorphism ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Polymorphism is the ability of methods to behave differently based on the object calling it. </p>
-					<p class="mb-4" align="justify"> <b> Answers : </b> Polymorphism allows the same functions to act differently classes. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Polymorphism is the ability of methods to behave differently based on the object calling it. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Polymorphism allows the same functions to act differently classes. </p>
                 </div>
             </div>
         </div>
@@ -187,7 +187,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 11. What is a Public ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Public members are visible to sub classes if those sub classes are in the same package as the super class. For a sub class outside the packages, the public members can be access. (or) A class declaration with the public keyword gives all class from all packages access to the public class. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Public members are visible to sub classes if those sub classes are in the same package as the super class. For a sub class outside the packages, the public members can be access. (or) A class declaration with the public keyword gives all class from all packages access to the public class. </p>
                 </div>
             </div>
         </div>	
@@ -196,7 +196,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 12. What is a Private ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Private members are visible only current class only. Private member are not visible other classes in same package. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Private members are visible only current class only. Private member are not visible other classes in same package. </p>
                 </div>
             </div>
         </div>	
@@ -205,7 +205,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 13. What is a Protected ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Protected members are visible to sub classes if those sub classes are in the same package as the super class. For a sub class outside the packages, the protected members can be access through inheritance. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Protected members are visible to sub classes if those sub classes are in the same package as the super class. For a sub class outside the packages, the protected members can be access through inheritance. </p>
                 </div>
             </div>
         </div>	
@@ -214,7 +214,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 14. What is a Default ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Default members are visible to sub classes if those sub classes are in the same package as the super class. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Default members are visible to sub classes if those sub classes are in the same package as the super class. </p>
                 </div>
             </div>
         </div>	
@@ -223,7 +223,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 15. What is a Volatile ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> The volatile modifier tells the JVM that a thread accessing variable must always reconcile its own private copy of the variable with the master copy in memory. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> The volatile modifier tells the JVM that a thread accessing variable must always reconcile its own private copy of the variable with the master copy in memory. </p>
                 </div>
             </div>
         </div>	
@@ -232,7 +232,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 16. What are the rules need to follow for Volatile Keyword ? </h4>
-					<p class="mb-4" align="justify"> <b> Rules : </b> </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Rules : </b> </p>
 					<p class="mb-4" align="justify"> 1. Volatile applied variable only. </p>
 					<p class="mb-4" align="justify"> 2. Volatile can be applied to static variables. </p>
 					<p class="mb-4" align="justify"> 3. Volatile can not be applied to final variables. </p>
@@ -246,7 +246,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 17. What is a Transient ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> A Transient variable is a variable that can not be serialized. The transient keyword can be used to indicate the Java Virtual Machine that the variable is not part of the persistent state of the object. Transient is a keyword. Transient can be applied only variables. Transient variable can not be seriablized. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> A Transient variable is a variable that can not be serialized. The transient keyword can be used to indicate the Java Virtual Machine that the variable is not part of the persistent state of the object. Transient is a keyword. Transient can be applied only variables. Transient variable can not be seriablized. </p>
                 </div>
             </div>
         </div>
@@ -255,7 +255,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 18. What is a Native Method ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> The Native method indicates that a method is implemented in platform dependent. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> The Native method indicates that a method is implemented in platform dependent. </p>
                 </div>
             </div>
         </div>
@@ -264,7 +264,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 19. What are the rules need to follow for Native Keyword ? </h4>
-					<p class="mb-4" align="justify"> <b> Rules : </b> </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Rules : </b> </p>
 					<p class="mb-4" align="justify"> 1. Native can be applies to only methods. </p>
 					<p class="mb-4" align="justify"> 2. Native can be applied to static method also. </p>
 					<p class="mb-4" align="justify"> 3. Native cannot be applied abstract. </p>
@@ -278,7 +278,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 20. What is a Synchronized ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Synchronized is a keyword. Synchronized can be applied only methods. Synchronized method can be accessed only one thread at a time. (or) The synchronized keyword indicates that a method can be accessed by only one thread at a time. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Synchronized is a keyword. Synchronized can be applied only methods. Synchronized method can be accessed only one thread at a time. (or) The synchronized keyword indicates that a method can be accessed by only one thread at a time. </p>
                 </div>
             </div>
         </div>
@@ -287,7 +287,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 21. What is a Strictfp ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Strictfp is a keyword in the Java programming language that restricts floating point calculations to ensure portability. The Strictfp was introduced into Java with the Java Virtual Machine version 1.2. Strictfp applied classes and methods only. Strictfp can be applied methods and classes. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Strictfp is a keyword in the Java programming language that restricts floating point calculations to ensure portability. The Strictfp was introduced into Java with the Java Virtual Machine version 1.2. Strictfp applied classes and methods only. Strictfp can be applied methods and classes. </p>
                 </div>
             </div>
         </div>
@@ -296,7 +296,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 22. What is an abstract ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> An abstract is a keyword. An abstract can be applied classes and methods. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> An abstract is a keyword. An abstract can be applied classes and methods. </p>
                 </div>
             </div>
         </div>
@@ -305,7 +305,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 23. What is an Abstract Method ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b>  An Abstract Method is a method that can be declared but not implemented. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b>  An Abstract Method is a method that can be declared but not implemented. </p>
                 </div>
             </div>
         </div>
@@ -314,7 +314,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 24. What is an Abstract Class ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b>  An abstract class is a class that can be declared abstract key word. An abstract class may or may not be abstract methods. An abstract class can not make an object but can be sub classed. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b>  An abstract class is a class that can be declared abstract key word. An abstract class may or may not be abstract methods. An abstract class can not make an object but can be sub classed. </p>
                 </div>
             </div>
         </div>
@@ -323,7 +323,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 25. What is a final ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b>  Final is a keyword. Final can be applied variables, methods and classes. Final Variables can not be modified. Final methods can be overloading but can not overriding. Final Classes can not extended. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b>  Final is a keyword. Final can be applied variables, methods and classes. Final Variables can not be modified. Final methods can be overloading but can not overriding. Final Classes can not extended. </p>
                 </div>
             </div>
         </div>
@@ -332,8 +332,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 26. What is a final Variable ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b>  A final variable that is not initialized at the time of declaration is known as blank final variable. It can be initialized only in constructor. </p>
-					<p class="mb-4" align="justify"> <b> Example : </b>  final String panCardNo; </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b>  A final variable that is not initialized at the time of declaration is known as blank final variable. It can be initialized only in constructor. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Example : </b>  final String panCardNo; </p>
                 </div>
             </div>
         </div>
@@ -343,8 +343,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 27. What is a static final Variable ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b>  A static final variable that is not initialized at the time of declaration is known as static blank final variable. It can be initialized only in static block. </p>
-					<p class="mb-4" align="justify"> <b> Example : </b>  final String panCardNo; </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b>  A static final variable that is not initialized at the time of declaration is known as static blank final variable. It can be initialized only in static block. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Example : </b>  final String panCardNo; </p>
                 </div>
             </div>
         </div>
@@ -353,7 +353,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 28. What is a Throwable ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Throwable is a class that represents all errors and exception which may occur in Java Virtual Machine.</p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Throwable is a class that represents all errors and exception which may occur in Java Virtual Machine.</p>
                 </div>
             </div>
         </div>
@@ -362,7 +362,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 29. What is a Exception ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Exception is an event that disrupt the normal flow of the program. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Exception is an event that disrupt the normal flow of the program. </p>
                 </div>
             </div>
         </div>
@@ -371,7 +371,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 30. What is a Exception Handling ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Exception Handling is a mechanism to handle the run time error. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Exception Handling is a mechanism to handle the run time error. </p>
                 </div>
             </div>
         </div>
@@ -380,7 +380,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 31. What is a Try Block ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Try Block is used to enclose the code that might throw an exception. Try Block must be declared inside the method only. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Try Block is used to enclose the code that might throw an exception. Try Block must be declared inside the method only. </p>
                 </div>
             </div>
         </div>
@@ -389,7 +389,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 32. What is a Catch Block ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Catch Block is used to handle the exceptions. Catch Block must be declared after the try block inside the method only. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Catch Block is used to handle the exceptions. Catch Block must be declared after the try block inside the method only. </p>
                 </div>
             </div>
         </div>
@@ -398,7 +398,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                    <h4 class="mb-3" align="left"> 33. What is a Constructor in Java ? </h4>
-                   <p class="mb-4" align="justify"> <b> Answers : </b> Constructor is a special type of method that is used to initialize the objects. Constructors is invoked at the time of object creation. It constructs the value. </p>
+                   <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Constructor is a special type of method that is used to initialize the objects. Constructors is invoked at the time of object creation. It constructs the value. </p>
                 </div>
             </div>
         </div>
@@ -407,7 +407,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                    <h4 class="mb-3" align="left"> 34. What is Inner Class ? </h4>
-                   <p class="mb-4" align="justify"> <b> Answers : </b> Inner Class is a class which is declared inside the class or interface. </p>
+                   <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Inner Class is a class which is declared inside the class or interface. </p>
                 </div>
             </div>
         </div>
@@ -416,7 +416,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 			<div class="container">
 				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 35. What is SIB ? </h4>
-					<p class="mb-4" align="justify"> <b> Answers : </b> SIB Stands for Static Initialization Block. SIB executes when the class gets loaded and executed only once in entire execution. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> SIB Stands for Static Initialization Block. SIB executes when the class gets loaded and executed only once in entire execution. </p>
                 </div>
             </div>
         </div>
@@ -425,7 +425,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 			<div class="container">
 				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 36. What is IIB ? </h4>
-					<p class="mb-4" align="justify"> <b> Answers : </b> IIB Stands for Instance Initialization Block. IIB executes when the constructor is called but before the execution of constructor. So, it executes as many times as constructor gets executed. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> IIB Stands for Instance Initialization Block. IIB executes when the constructor is called but before the execution of constructor. So, it executes as many times as constructor gets executed. </p>
                 </div>
             </div>
         </div>
@@ -434,7 +434,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 37. Which is ListIterator ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> ListIterator is an interface. ListIterator can retrieve the elements in forward and backword direction from a collection object. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> ListIterator is an interface. ListIterator can retrieve the elements in forward and backword direction from a collection object. </p>
                 </div>
             </div>
         </div>
@@ -443,8 +443,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 			<div class="container">
 				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 38. What is SerialVersionID ? </h4>
-					<p class="mb-4" align="justify"> <b> Answers : </b> Whenever, an object is serialized the object is stamped with a version Id number for the object class. </p>
-					<p class="mb-4" align="justify"> <b> Answers : </b> serialVersionUID is a unique identifier assigned to a class during the serialization process. It ensures that a serialized object corresponds to the same class definition during deserialization.  </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Whenever, an object is serialized the object is stamped with a version Id number for the object class. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> serialVersionUID is a unique identifier assigned to a class during the serialization process. It ensures that a serialized object corresponds to the same class definition during deserialization.  </p>
                 </div>
             </div>
         </div>
@@ -453,7 +453,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 39. Which is Resouce Bundle ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> The Resouce Bundle class is used to internationalize the message. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> The Resouce Bundle class is used to internationalize the message. </p>
                 </div>
             </div>
         </div>
@@ -462,7 +462,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 40. Which is a File ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> File is a class. File can not used to actually read (or) write data. File can used to making new files, searching for files, deleting files, making directories and working with pathes etc. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> File is a class. File can not used to actually read (or) write data. File can used to making new files, searching for files, deleting files, making directories and working with pathes etc. </p>
                 </div>
             </div>
         </div>
@@ -471,7 +471,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 41. Which is FileReader ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> FileReader is a class. FileReader can used to read single character files, the whole stream of character (or a fixed number of characters. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> FileReader is a class. FileReader can used to read single character files, the whole stream of character (or a fixed number of characters. </p>
                 </div>
             </div>
         </div>
@@ -480,7 +480,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 42. Which is OutOfMemoryError in Java ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> OutOfMemoryError is a sub class of java.lang.VirtualMachineError and its throws by JVM when it ran out of heap memory. <br/> C:\> java MyProgram -Xms 1024m - Xmx 1024m - XX:PermSize=64M -XX:MaxPermSize = 256m. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> OutOfMemoryError is a sub class of java.lang.VirtualMachineError and its throws by JVM when it ran out of heap memory. <br/> C:\> java MyProgram -Xms 1024m - Xmx 1024m - XX:PermSize=64M -XX:MaxPermSize = 256m. </p>
                 </div>
             </div>
         </div>
@@ -489,7 +489,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 43. Which is the famous team used to describe Java ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> WORA mean Write One Run Anywhere. Java is guaranteed to be Write Once, Run Anywhere. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> WORA mean Write One Run Anywhere. Java is guaranteed to be Write Once, Run Anywhere. </p>
                 </div>
             </div>
         </div>
@@ -498,7 +498,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 44. Why is SerialVersionUID Important ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Serialization converts an object into a byte stream, enabling it to be saved to a file or transferred over a network. During deserialization, Java reconstructs the object from the byte stream. For this process to succeed, the serialVersionUID of the serialized object must match the serialVersionUID of the class being deserialized. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Serialization converts an object into a byte stream, enabling it to be saved to a file or transferred over a network. During deserialization, Java reconstructs the object from the byte stream. For this process to succeed, the serialVersionUID of the serialized object must match the serialVersionUID of the class being deserialized. </p>
                 </div>
             </div>
         </div>
@@ -507,7 +507,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 			<div class="container">
 				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 45. What is FileWriter ? </h4>
-					<p class="mb-4" align="justify"> <b> Answers : </b> FileWriter is a class. FileWriter class is used to write single characters, the whole stream of characters (or) fixed number of character. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> FileWriter is a class. FileWriter class is used to write single characters, the whole stream of characters (or) fixed number of character. </p>
                 </div>
             </div>
         </div>
@@ -516,7 +516,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 			<div class="container">
 				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<h4 class="mb-3" align="left"> 46. What is BufferReader ? </h4>
-					<p class="mb-4" align="justify"> <b> Answers : </b> BufferReader is a class. BufferReader is used to read large chunks of data from a file at once and keep this data in a buffer. </p>
+					<p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> BufferReader is a class. BufferReader is used to read large chunks of data from a file at once and keep this data in a buffer. </p>
                 </div>
             </div>
         </div>
@@ -525,7 +525,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 47. Is it possible to re-throw exception ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, We can re-throw exceptions from catch block to another class where it can be handled. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, We can re-throw exceptions from catch block to another class where it can be handled. </p>
                 </div>
             </div>
         </div>
@@ -534,7 +534,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 48. What is the super class for all exceptions ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Throwable is the super class of all exceptions in Java. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Throwable is the super class of all exceptions in Java. </p>
                 </div>
             </div>
         </div>
@@ -543,7 +543,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 49. Can we define an interface inside the class ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, If we can define an Interface inside the class. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, If we can define an Interface inside the class. </p>
                 </div>
             </div>
         </div>
@@ -552,7 +552,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 50. Can you store a primitive data type into a collection ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> No, Collections store only objects. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> No, Collections store only objects. </p>
                 </div>
             </div>
         </div>		
@@ -561,7 +561,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 51. Can we intialize black final variable ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes but only in Constructor. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes but only in Constructor. </p>
                 </div>
             </div>
         </div>
@@ -570,7 +570,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 52. Can you make List elements synchronized ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, Collections class provides methods to make List elements as synchronized. <br/> public static List SynchronizedList(List list) {  } </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, Collections class provides methods to make List elements as synchronized. <br/> public static List SynchronizedList(List list) {  } </p>
                 </div>
             </div>
         </div>
@@ -579,7 +579,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 53. Can you make Set elements synchronized ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, Collections class provides methods to make Set elements as synchronized. <br/> public static Set SynchronizedSet(Set set) { } <br/> public static SortedSet SynchronizedSortedSet(SortedSet set) { } </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, Collections class provides methods to make Set elements as synchronized. <br/> public static Set SynchronizedSet(Set set) { } <br/> public static SortedSet SynchronizedSortedSet(SortedSet set) { } </p>
                 </div>
             </div>
         </div>
@@ -588,7 +588,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 54. Can you make Map elements synchronized ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, Collections class provides methods to make Map elements as synchronized. <br/> public static Map SynchronizedMap(Map map) { } <br/> public static SortedMap SynchronizedSortedMap(SortedMap map) { } </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, Collections class provides methods to make Map elements as synchronized. <br/> public static Map SynchronizedMap(Map map) { } <br/> public static SortedMap SynchronizedSortedMap(SortedMap map) { } </p>
                 </div>
             </div>
         </div>
@@ -597,7 +597,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 55. Can we override the overloaded methods ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, we can override the overloaded methods. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, we can override the overloaded methods. </p>
                 </div>
             </div>
         </div>
@@ -606,7 +606,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 56. Can you declare the main method as final ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, such as public static final void main (String [] args) { } </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, such as public static final void main (String [] args) { } </p>
                 </div>
             </div>
         </div>
@@ -615,7 +615,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 57. Can you have virtual functions in Java ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, all functions in Java are virtual functions by default. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, all functions in Java are virtual functions by default. </p>
                 </div>
             </div>
         </div>
@@ -624,7 +624,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 58. Can we override main() method ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> No, main() method is a static method and is thus not polymorphic. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> No, main() method is a static method and is thus not polymorphic. </p>
                 </div>
             </div>
         </div>
@@ -633,7 +633,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 59. Can we return any value in try block ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, we can return any value in try block. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, we can return any value in try block. </p>
                 </div>
             </div>
         </div>
@@ -642,7 +642,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 60. Can we return any value in catch block ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, we can return any value in catch block. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, we can return any value in catch block. </p>
                 </div>
             </div>
         </div>
@@ -651,7 +651,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 61. Can we return any value in finally block ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, we can return any value in finally block. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, we can return any value in finally block. </p>
                 </div>
             </div>
         </div>
@@ -660,7 +660,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 62. Can we return any value in try, catch, finally block at a time ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> No, we can return any value either from try block or catch block or finally block. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> No, we can return any value either from try block or catch block or finally block. </p>
                 </div>
             </div>
         </div>
@@ -669,7 +669,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 63. Can we define a class inside the interface ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, If we define a class inside the interface. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, If we define a class inside the interface. </p>
                 </div>
             </div>
         </div>
@@ -678,7 +678,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 64. Can we overload main() method ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, by method overloading. You can have any number of main() methods in a class by method overloading. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, by method overloading. You can have any number of main() methods in a class by method overloading. </p>
                 </div>
             </div>
         </div>
@@ -687,7 +687,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 65. What is instanceOf Keyword ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> instanceof is a binary operator used to determine whether an object is an instance of a specific class, subclass, or implements a particular interface. It is also referred to as a "type comparison operator" because it compares an object's runtime type against a specified type. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> instanceof is a binary operator used to determine whether an object is an instance of a specific class, subclass, or implements a particular interface. It is also referred to as a "type comparison operator" because it compares an object's runtime type against a specified type. </p>
                 </div>
             </div>
         </div>
@@ -696,7 +696,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 66. is final method inherited ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, final method is inherited but you can not override it. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, final method is inherited but you can not override it. </p>
                 </div>
             </div>
         </div>
@@ -705,7 +705,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h4 class="mb-3" align="left"> 67. Can we call one constructor from another if a class has multiple constructor ? </h4>
-                    <p class="mb-4" align="justify"> <b> Answers : </b> Yes, use this() method. </p>
+                    <p class="mb-4" align="justify"> <b class="text-success"> Answers : </b> Yes, use this() method. </p>
                 </div>
             </div>
         </div>
@@ -714,7 +714,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                     <h1 class="mb-3"> Java Difference Interview Questions </h1>
-                    <p class="mb-4" align="justify"> <b>  </p>
+                    <p class="mb-4" align="justify"> <b class="text-success">  </p>
                 </div>
             </div>
         </div>

@@ -49,7 +49,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -57,13 +57,13 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.php" class="nav-item nav-link"> Home </a>
-                    <a href="about.php" class="nav-item nav-link"> About Us </a>
-                    <a href="training.php" class="nav-item nav-link active"> Training </a>
-					<a href="development.php" class="nav-item nav-link"> Development </a>
-                    <a href="contact.php" class="nav-item nav-link"> Contact Us </a>
+                    <a href="home" class="nav-item nav-link"> Home </a>
+                    <a href="about" class="nav-item nav-link"> About Us </a>
+                    <a href="training" class="nav-item nav-link active"> Training </a>
+					<a href="development" class="nav-item nav-link"> Development </a>
+                    <a href="contact" class="nav-item nav-link"> Contact Us </a>
                 </div>
-                <a href="joinUs.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="joinUs" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <div class="container-xxl py-5 page-header position-relative mb-5">

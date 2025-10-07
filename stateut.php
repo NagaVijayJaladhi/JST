@@ -119,14 +119,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>
 							<?php
-								$sql = "SELECT SUTID,STATE,CAPITAL,DOF,LANGUAGE,ANIMAL FROM stateut";
+								$sql = "SELECT ROW_NUMBER() OVER (ORDER BY STATEUT ASC) AS SUTID,STATEUT,CAPITAL,DOF,LANGUAGE,ANIMAL FROM stateut WHERE STYPE = 'STATE'";
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
 							?>
 							<tr> 
 								<td align="justify"> <?php echo $row['SUTID']; ?> </td> 
-								<td align="justify"> <?php echo $row['STATE']; ?> </td> 
+								<td align="justify"> <?php echo $row['STATEUT']; ?> </td> 
 								<td align="justify"> <?php echo $row['CAPITAL']; ?> </td> 
 								<td align="justify"> <?php echo $row['DOF']; ?> </td> 
 								<td align="justify"> <?php echo $row['LANGUAGE']; ?> </td>
@@ -136,6 +136,64 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 									}
 								}
 							?>
+						</tbody> 
+					</table>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+					<table class="table table-bordered">
+						<thead class="table-light"> 
+							<tr> <th scope="col"> <b> S.No </b> </th> 
+								 <th scope="col"> <b> Union Territories </b> </th> 
+								 <th scope="col"> <b> UT Capital </b> </th>
+								 <th scope="col"> <b> Date of Formation </b> </th>		
+								 <th scope="col"> <b> State Language </b> </th>		
+								 <th scope="col"> <b> State Animal </b> </th>								 
+							</tr>
+						</thead>
+						<tbody>
+							<?php
+								$sql = "SELECT ROW_NUMBER() OVER (ORDER BY STATEUT ASC) AS SUTID,STATEUT,CAPITAL,DOF,LANGUAGE,ANIMAL FROM stateut WHERE STYPE = 'UT'";
+								$result = $conn->query($sql);
+								if ($result->num_rows > 0) {
+									while ($row = $result->fetch_assoc()) {
+							?>
+							<tr> 
+								<td align="justify"> <?php echo $row['SUTID']; ?> </td> 
+								<td align="justify"> <?php echo $row['STATEUT']; ?> </td> 
+								<td align="justify"> <?php echo $row['CAPITAL']; ?> </td> 
+								<td align="justify"> <?php echo $row['DOF']; ?> </td> 
+								<td align="justify"> <?php echo $row['LANGUAGE']; ?> </td>
+								<td align="justify"> <?php echo $row['ANIMAL']; ?> </td>								
+							</tr>
+							<?php       
+									}
+								}
+							?>
+						</tbody> 
+					</table>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3" align="left"> Difference Between States and Union Territories of India </h4>
+                    <table class="table table-bordered">
+						<thead class="table-light"> 
+							<tr> <th scope="col"> <b> Aspect </b> </th> <th scope="col"> <b> States </b> </th> <th scope="col"> <b> Union Territories </b> </th>  </tr>
+						</thead>
+						<tbody>
+							<tr> <td align="justify"> Administrative Units</td> <td align="justify"> Own Administrative units with the elected Government </td> <td align="justify"> Controlled and Administered by the Central Government </td> </tr>
+							<tr> <td align="justify"> Executive Head </td> <td align="justify"> Governor </td> <td align="justify"> President </td> </tr>
+							<tr> <td align="justify"> Relationship with Centre </td> <td align="justify"> Federal </td> <td align="justify"> Unitary with the Centre (All powers rest with the Union) </td> </tr>
+							<tr> <td align="justify"> Administration </td> <td align="justify"> Chief Minister, Elected by the people 	</td> <td align="justify"> Administrator appointed by the President (Except Delhi, Puducherry, and Jammu and Kashmir) </td> </tr>
+							<tr> <td align="justify"> Head </td> <td align="justify"> Chief Minister is the Real Head </td> <td align="justify"> Lieutenant is the Real Head </td> </tr>
 						</tbody> 
 					</table>
                 </div>

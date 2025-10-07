@@ -56,11 +56,11 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-					<a href="jstHome.php" class="nav-item nav-link active"> Java </a>
+					<a href="jstHome.php" class="nav-item nav-link"> Java </a>
                     <a href="pyHome.php" class="nav-item nav-link"> Python </a>
 					<a href="htmlHome.php" class="nav-item nav-link"> HTML </a>
                     <a href="dbHome.php" class="nav-item nav-link"> Data Base </a>
-					<a href="gkHome.php" class="nav-item nav-link"> General Knowledge </a>
+					<a href="gkHome.php" class="nav-item nav-link active"> General Knowledge </a>
                 </div>
                 <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -96,14 +96,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>		
 							<?php
-								$sql = "SELECT * FROM `indianhistory` WHERE ERA = 'BCE'";
+								$sql = "SELECT ROW_NUMBER() OVER (ORDER BY HYEAR) AS NO,HYEAR,EVENTS FROM historytimeline WHERE ERA = 'BCE' AND PLACE = 'INDIA'";
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
 							?>
 							<tr>
-								<td align="justify"> <?php echo $row['INDID']; ?> </td> 
-								<td align="justify"> <?php echo $row['TIME']; ?> </td> 
+								<td align="justify"> <?php echo $row['NO']; ?> </td> 
+								<td align="justify"> <?php echo $row['HYEAR']; ?> </td> 
 								<td align="justify"> <?php echo $row['EVENTS']; ?> </td> 
 							</tr>
 							<?php       
@@ -117,14 +117,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>		
 							<?php
-								$sql = "SELECT * FROM `indianhistory` WHERE ERA = 'CE'";
+								$sql = "SELECT ROW_NUMBER() OVER (ORDER BY HYEAR) AS NO,HYEAR,EVENTS FROM historytimeline WHERE ERA = 'CE' AND PLACE = 'INDIA'";
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
 							?>
 							<tr>
-								<td align="justify"> <?php echo $row['INDID']; ?> </td> 
-								<td align="justify"> <?php echo $row['TIME']; ?> </td> 
+								<td align="justify"> <?php echo $row['NO']; ?> </td> 
+								<td align="justify"> <?php echo $row['HYEAR']; ?> </td> 
 								<td align="justify"> <?php echo $row['EVENTS']; ?> </td> 
 							</tr>
 							<?php       

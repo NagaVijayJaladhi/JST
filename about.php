@@ -38,7 +38,7 @@ include "dbconfig.php";
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -46,13 +46,13 @@ include "dbconfig.php";
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="index.php" class="nav-item nav-link"> Home </a>
-                    <a href="about.php" class="nav-item nav-link active"> About Us </a>
-                    <a href="training.php" class="nav-item nav-link"> Training </a>
-					<a href="development.php" class="nav-item nav-link"> Development </a>
-                    <a href="contact.php" class="nav-item nav-link"> Contact Us </a>
+                    <a href="home" class="nav-item nav-link"> Home </a>
+                    <a href="about" class="nav-item nav-link active"> About Us </a>
+                    <a href="training" class="nav-item nav-link"> Training </a>
+					<a href="development" class="nav-item nav-link"> Development </a>
+                    <a href="contact" class="nav-item nav-link"> Contact Us </a>
                 </div>
-                <a href="joinUs.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="joinUs" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <div class="container-xxl py-5 page-header position-relative mb-5">
@@ -73,7 +73,9 @@ include "dbconfig.php";
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
                     <h1 class="mb-3"> About Jaladhi Soft Technology </h1>
                     <p class="mb-4" align="justify">  </P>
-					<p class="mb-4" align="justify"> The Jaladhi Soft Technology has been delighting, enlightening and inspiring readers Java Tutorials, Web Site, Web Applications, Android Application and College Acadamic Projects. Jaladhi Soft Technology has developed difference types of Projects like Web Sites, Web Applications, Andriod Applications as well as Acadamic Projects like M.Tech, M.C.A, B.Tech, B.Sc Final Year Projects. Our Java Programming Tutorial is designed for Under Graduate and Post Graduate Students and IT Freshers and Experience Professionals. Java is an Object Oriented Programming, Class Based, Concurrent, Secured and General Purpose Computer Programming Language. Java is a widely used Robust Technology.</P> <p class="mb-4" align="justify"> Jaladhi Soft Technology Tutorial would help you learn Java Technology and Framework. I have shared tutorials on various topics of Java including tutorials on Core Java and Advanced Java Concepts and Java Programming Examples. This Core Java Tutorial contains the links of all the tutorials in a systematic order starting from beginner‘s level to the advanced topics. Whether you are a college student looking for learn Java Technology or a IT Company Employee Learning advanced Java topics for building an application in Java. This Java Tutorial would definitely be useful for you. </p>
+					<p class="mb-4" align="justify"> The <b> Jaladhi Soft Technology </b> has been delighting, enlightening and inspiring readers Java Tutorials, Web Site, Web Applications, Android Application and College Acadamic Projects. Jaladhi Soft Technology has developed difference types of Projects like Web Sites, Web Applications, Andriod Applications as well as Acadamic Projects like M.Tech, M.C.A, B.Tech, B.Sc Final Year Projects. Our Java Programming Tutorial is designed for Under Graduate and Post Graduate Students and IT Freshers and Experience Professionals. Java is an Object Oriented Programming, Class Based, Concurrent, Secured and General Purpose Computer Programming Language. Java is a widely used Robust Technology.</P> 
+					
+					<p class="mb-4" align="justify"> <b> Jaladhi Soft Technology </b> Tutorial would help you learn Java Technology and Framework. I have shared tutorials on various topics of Java including tutorials on Core Java, Advanced Java and Java Frameworks Concepts and Java Programming Examples. This Core Java Tutorial contains the links of all the tutorials in a systematic order starting from beginner‘s level to the advanced topics. Whether you are a college student looking for learn Java Technology or a IT Company Employee Learning advanced Java topics for building an application in Java. This Java Tutorial would definitely be useful for you. </p>
                 </div>
             </div>
         </div>
@@ -123,7 +125,7 @@ include "dbconfig.php";
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4"> About Jaladhi Naga Vijay </h1>
-                                <p class="mb-4" align="justify"> I am Jaladhi Naga Vijay. My Education Qualification is M.Tech., M.C.A. I am Senior Software Engineer (Java Developer) and Java Trainer. I have 11 years of experience in IT sector as a trainer and developer in Java, JDBC, Java Servlets, JSP, Struts 2 Framework, Hibernate Framework, EJB, JPA, Spring and Spring Boot Framework, MySQL Data Base. </p>
+                                <p class="mb-4" align="justify"> I am Jaladhi Naga Vijay. My Education Qualification is M.Tech (C.S.E)., M.C.A. I am Senior Software Java Engineer and Java Trainer. I have 12 years of experience in Information Technology sector as a trainer and developed multiple real time projects using Java Technology like Java, JDBC, Servlets, JSP, Struts 2 Framework, Hibernate Framework, EJB, JPA, Spring, Spring Boot Framework, Microservices, MySQL and Oracle Data Base. </p>
                             </div>
                         </div>
                     </div>

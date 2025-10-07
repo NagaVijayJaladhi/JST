@@ -57,11 +57,11 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-					<a href="jstHome.php" class="nav-item nav-link active"> Java </a>
+					<a href="jstHome.php" class="nav-item nav-link"> Java </a>
                     <a href="pyHome.php" class="nav-item nav-link"> Python </a>
 					<a href="htmlHome.php" class="nav-item nav-link"> HTML </a>
                     <a href="dbHome.php" class="nav-item nav-link"> Data Base </a>
-					<a href="gkHome.php" class="nav-item nav-link"> General Knowledge </a>
+					<a href="gkHome.php" class="nav-item nav-link active"> General Knowledge </a>
                 </div>
                 <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -93,7 +93,8 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 					<table class="table table-bordered">
 						<thead class="table-light"> 
 							<tr> <th scope="col"> <b> S.No </b> </th> <th scope="col"> <b> Country Name </b> </th> 
-							<th scope="col"> <b> Capital </b> </th> <th scope="col"> <b> Currency </b> </th> <th scope="col"> <b> 	Continent </b> </th>
+							<th scope="col"> <b> Capital </b> </th> <th scope="col"> <b> Currency </b> </th> <th scope="col"> <b> ISO Country Codes </b> </th>
+							<th scope="col"> <b> Country Code </b> </th> <th scope="col"> <b> Continent </b> </th>
 							</tr>
 						</thead>
 						<tbody>		
@@ -107,7 +108,9 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 								<td align="justify"> <?php echo $row['CCCID']; ?> </td> 
 								<td align="justify"> <?php echo $row['COUNTRYNAME']; ?> </td> 
 								<td align="justify"> <?php echo $row['CAPITAL']; ?> </td> 
-								<td align="justify"> <?php echo $row['CURRENCY']; ?> </td> 
+								<td align="justify"> <?php echo $row['CURRENCY']; ?> </td>
+								<td align="justify"> <?php echo $row['ISOCC']; ?> </td>
+								<td align="justify"> <?php echo $row['CODES']; ?> </td>								
 								<td align="justify"> <?php echo $row['CONTINENT']; ?> </td> 
 							</tr>
 							<?php       
