@@ -90,7 +90,7 @@ include "dbconfig.php";
 						<p class="mb-4" align="justify"> <b> Motto : </b> This motto encapsulates our unwavering dedication to continuous learning, hands-on practice, and the pursuit of excellence. </p>
                         <div class="row g-4 align-items-center">
                             <div class="col-sm-6">
-                                <a class="btn btn-primary rounded-pill py-3 px-5" href="training.php"> Read Java Tutorial </a>
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="training"> Read Java Tutorial </a>
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
@@ -119,7 +119,7 @@ include "dbconfig.php";
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/aboutUs.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded" src="img/aboutUs" style="object-fit: cover;">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">

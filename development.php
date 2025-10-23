@@ -82,14 +82,14 @@ include "dbconfig.php";
             <div class="container">
                 <div class="bg-light rounded">
                     <div class="row mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/AAPP.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-100 h-100 rounded p-5" src="img/AAPP.jpg" style="object-fit: cover;">
                             </div>
                         </div>
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4"> Android Application </h1>
+                                <h1 class="mb-4"> Android Application Development </h1>
                                 <p class="mb-4" align="justify"> An <b> Android Application </b> is fundamentally the key to capture an important portion of the mobile market which is increasing daily. It let the business to reach out to more number of customers. Android applications are usually developed in the Java language using the Android Software Development Kit. </p>
 								<p class="mb-4" align="justify"> Once developed, <b> Android Applications </b> can be packaged easily and sold out either through a store such as Google Play, SlideME, Opera Mobile Store, Mobango, F-droid and the Amazon Appstore. Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies. </p> 
 								<p class="mb-4" align="justify"> <b> Android Application </b> is a software designed to run on an Android device or emulator. The term also refers to an APK file which stands for Android package. This file is a Zip archive containing app code, resources, and meta information. Android apps can be written in Java and are run inside Virtual Machine. The official development environment is Android Studio. </p>
@@ -105,7 +105,7 @@ include "dbconfig.php";
             <div class="container">
                 <div class="row mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
-                        <h1 class="mb-4"> Web Application </h1>
+                        <h1 class="mb-4"> Web Application Development </h1>
                         <p class="mb-4" align="justify"> A <b> Web Application (Online/Offline) </b> is software that runs in your web browser. Businesses have to exchange information and deliver services remotely. They use web applications to connect with customers conveniently and securely. The most common website features like shopping carts, product search and filtering, instant messaging, and social media newsfeeds are web applications in their design. They allow you to access complex functionality without installing or configuring software. <b> Web Application </b> have several benefits, with almost all major enterprises utilizing them as part of their user offerings. </p>
 						
 						<p class="mb-4" align="justify"> <b> Accessibility </b> Web Application can be accessed from all web browsers and across various personal and business devices. Teams in different locations can access shared documents, content management systems, and other business services through subscription-based web applications. </p> 
@@ -119,7 +119,7 @@ include "dbconfig.php";
                     <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s" style="min-height: 400px;">
                         <div class="row">
                             <div class="position-relative h-100">
-                                <img class="img-fluid w-100 h-100 p-4 mb-5 py-6" src="img/WAPDEV.png" alt="" style="object-fit: cover;">
+                                <img class="img-fluid w-100 h-100 p-4 mb-5 py-6 p-5" src="img/WAPDEV.png" alt="" style="object-fit: cover;">
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@ include "dbconfig.php";
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4"> Website Design </h1>
+                                <h1 class="mb-4"> Website Design & Development</h1>
                                 <p class="mb-4" align="justify"> Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate. Web designing essentially involves working on every attribute of the website that people interact with, so that the website is simple and efficient, allows users to quickly find the information they need, and looks visually pleasing. All these factors, when combined, decide how well the website is designed. </p>
 								
 								<p class="mb-4" align="justify"> With a well-designed website, it becomes easier to make a grand first impression. For brands, it is all about how potential customers or clients view their business, and this is greatly influenced by how they view their website. Your website represents your brand, and when you focus on web designing, it can help you create a compelling and powerful first impression. </p> 
@@ -155,7 +155,7 @@ include "dbconfig.php";
             <div class="container">
                 <div class="row mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1400px;">
-                        <h1 class="mb-4"> Academic Project (College Projects) </h1>
+                        <h1 class="mb-4"> Academic Project (College Projects) Development </h1>
                         <p align="justify"> JST Projects are being introduced to make a long way from its beginnings. We are the one source and efficient student oriented service provider for IT projects. We expertise and are the best mutually proclaimed in Platform for Academic Live Projects, for students of B.Tech, M.Tech, MBA, MCA. We are dedicated to giving you the best of IT projects, with a focus on Quality, Dependability, Structure. </p>
 
 						<p align="justify"> JST Projects is applying its way through, to help with the best of service for students in Implementing CSE Projects in skill sets – Data Sciences, Machine Learning, Artificial Intelligence, Deep Learning, Android, Big Data, Block Chain and Java Related Technologies with the best equipment which drives them to inspiration. </p>

@@ -13,19 +13,15 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
     session_regenerate_id(true);
     $_SESSION['last_timestamp'] = time();
   }
-  
-$sql = "SELECT courses.COURSE, topics.TOPIC, topics.PURL FROM courses INNER JOIN topics ON courses.CID = topics.CPID AND courses.CTYPE = topics.CTYPE WHERE courses.CTYPE = 'GK'";
+
+$sql = "SELECT AID,ANAME,KINGDOM,PHYLUM,CLASS,ORDERS,FAMILY,GENUS,SNAME,LOCATIONS FROM animals";
 $result = $conn->query($sql);
 
-$courses = [];
+$animals = [];
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $courses[$row['COURSE']][] = [
-            'topic' => $row['TOPIC'],
-            'purl'  => $row['PURL']
-        ];
-
+        $animals[] = $row;
     }
 }
 ?>
@@ -48,6 +44,8 @@ if ($result->num_rows > 0) {
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript">
 		function disableBack() { window.history.forward(); }
 		setTimeout("disableBack()", 0);
@@ -64,7 +62,7 @@ if ($result->num_rows > 0) {
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -83,61 +81,91 @@ if ($result->num_rows > 0) {
         </nav>
         <div class="container-xxl py-5 page-header position-relative mb-5">
             <div class="container py-5">
-                <h1 class="display-2 text-white animated slideInDown mb-4"> General Knowledge </h1>
+                <h1 class="display-2 text-white animated slideInDown mb-4">Java Training</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#"> Home </a></li>
-                        <li class="breadcrumb-item"><a href="#"> Pages </a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page"> <?php echo $_SESSION["username"]; ?> </li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                         <li class="breadcrumb-item"><a href="#"> General Knowlege </a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page"> Animals </li>
                     </ol>
                 </nav>
             </div>
         </div>
-
-		<?php foreach ($courses as $course => $topics) { ?>
-			<div class="container-xxl py-5">
-				<div class="container">
-					<div class="text-center mx-auto mb-5 wow fadeInUp p-2" data-wow-delay="0.1s" style="max-width: 600px;">
-						<h1 class="mb-3"><?php echo $course; ?></h1>
-					</div>
-					<div class="row g-4">
-						<?php foreach ($topics as $topicData) { ?>
-							<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-								<div class="classes-item h-100">
-									<div class="bg-light rounded p-4 pt-5 h-100 d-flex flex-column justify-content-center">
-										<a class="d-block text-center h3 mt-3 mb-4" href="<?php echo $topicData['purl']; ?>.php">
-											<?php echo $topicData['topic']; ?>
-										</a>
-									</div>
-								</div>
-							</div>
-						<?php } ?>
-					</div>
-				</div>
-			</div>
-		<?php } ?>
 		
-		<div class="container-xxl py-5">
+		<div class="container-xxl">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3"> Multiple Choose Questions &amp; Answers </h1>
-                    <p> </p>
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h1 class="mb-3"> List of Animals Information </h1>
                 </div>
-				<br/>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="classes-item">
-                            <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="gkmcq.php"> Quiz Questions </a>
-                            </div>
-                        </div>
-                    </div>
-				</div>
             </div>
         </div>
 		
+		<div class="container-xxl py-5">
+			<div class="container">
+				<div class="row g-4">
+					<?php foreach ($animals as $animal) { 
+						$modalId = 'modelPopup' . $animal['AID'];
+					?>
+					<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="classes-item h-10">
+						<div class="bg-light rounded p-4 pt-4 h-10 d-flex flex-column align-items-center justify-content-center">
+							<img class="img-fluid rounded mb-3" src="animals/<?php echo $animal['ANAME']; ?>.png" alt="<?php echo $animal['ANAME']; ?>" style="width: 120px; height: 120px; object-fit: cover;">
+							<a class="d-block text-center h5 mt-2 mb-2" data-toggle="modal" data-target="#<?php echo $modalId; ?>">
+								<?php echo $animal['AID']; ?> . <?php echo $animal['ANAME']; ?>
+							</a>
+						</div>
+					</div>
+				</div>
+
+					<div class="modal fade" id="<?php echo $modalId; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $modalId; ?>Label" aria-hidden="true">
+						<div class="modal-dialog modal-xl custom-modal-height custom-modal-width" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="<?php echo $modalId; ?>Label">
+										<?php echo $animal['AID']; ?> . <?php echo $animal['ANAME']; ?>
+									</h5>
+									<button type="button" class="close p-0 m-2 border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true" style="font-size: 2rem;">&times;</span>
+									</button>
+
+								</div>
+								<div class="modal-body">
+									<dl class="row">
+										<dt class="col-sm-4">Kingdom </dt>
+										<dd class="col-sm-8"><?php echo $animal['KINGDOM']; ?></dd>
+
+										<dt class="col-sm-4">Phylum </dt>
+										<dd class="col-sm-8"><?php echo $animal['PHYLUM']; ?></dd>
+
+										<dt class="col-sm-4">Class </dt>
+										<dd class="col-sm-8"><?php echo $animal['CLASS']; ?></dd>
+
+										<dt class="col-sm-4">Order	 </dt>
+										<dd class="col-sm-8"><?php echo $animal['ORDERS']; ?></dd>
+
+										<dt class="col-sm-4">Family </dt>
+										<dd class="col-sm-8"><?php echo $animal['FAMILY']; ?></dd>
+										
+										<dt class="col-sm-4">Genus </dt>
+										<dd class="col-sm-8"><?php echo $animal['GENUS']; ?></dd>
+
+										<dt class="col-sm-4">Scientific Name </dt>
+										<dd class="col-sm-8"><?php echo $animal['SNAME']; ?></dd>
+
+										<dt class="col-sm-4">Location </dt>
+										<dd class="col-sm-8"><?php echo $animal['LOCATIONS']; ?></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+		
 		<div class="container-fluid bg-dark text-white-50 footer mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container text-center">
+             <div class="container text-center">
                 <div class="row g-5">
 					<?php
 						$sql = "SELECT * FROM `socialmedia`";

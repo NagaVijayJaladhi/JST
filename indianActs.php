@@ -95,6 +95,22 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
         </div>
 		
 		<div class="container-xxl">
+			<div class="container">
+				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+					<form name="bwdatesdata" action="" method="post">
+						<table class="table table-borderless">
+							<tr>
+								<td> Search Indian Act </td>
+								<td> <input id="searchdata" type="text" name="searchdata" required="true" class="form-control"> </td>
+								<td> <button class="btn-primary btn" type="submit" name="search"> Submit </button> </td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-xxl">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<table class="table table-bordered">
@@ -107,7 +123,44 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>
 							<?php
-								$sql = "SELECT IPAID,ACTNAME,YEAR,ACTNO FROM indianacts";
+								$home = 0;
+								if (isset($_GET["page"])) { 
+									$pn = $_GET["page"]; 
+								} else { 
+									$pn = 1; 
+								}
+								
+								if(isset($_POST['search'])) { 
+									$sdata = $_POST['searchdata'];
+									$home = 1;
+								}
+								
+								$limit = 100;
+								$count = "";  
+								
+								if (empty($sdata)) {
+									$count = "SELECT COUNT(*) AS TOTAL FROM indianacts";  
+								} else {
+									$count = "SELECT COUNT(*) AS TOTAL FROM indianacts WHERE ACTNAME = '$sdata'";  
+								}
+								
+								$rs_result = $conn->query($count);
+								$total_records = "";								
+								if ($rs_result->num_rows > 0) {
+									while ($row = $rs_result->fetch_assoc()) {
+										$total_records = $row['TOTAL'];
+									}
+								}
+								$total_pages = ceil($total_records / $limit);
+								$start_from = ($pn-1) * $limit;
+								$sql = "";
+								
+								if (empty($sdata)) {
+									$sql = "SELECT ROW_NUMBER() OVER (ORDER BY ACTNAME ASC) AS IPAID,ACTNAME,YEAR,ACTNO FROM indianacts order by ACTNAME ASC LIMIT $start_from, $limit";
+								} else {
+									$sql = "SELECT ROW_NUMBER() OVER (ORDER BY ACTNAME ASC) AS IPAID,ACTNAME,YEAR,ACTNO FROM indianacts WHERE ACTNAME = '$sdata' order by ACTNAME ASC";
+								}
+								
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
@@ -124,6 +177,46 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 							?>
 						</tbody> 
 					</table>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                     <table class="table table-borderless">
+                        <tbody align="left">
+							<?php 
+								if ($home == 1) {
+							?>
+                            <tr>   
+								<td> <a href="indianActs.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+								      <i class="fa fa-arrow-left ms-3"> </i> Back Home </a> </td> 
+							<?php 
+								} 
+							?>
+							<?php 
+								if ($pn - 1 >= 1) {
+							?>
+                            <tr>   
+								<td> <a href="indianActs.php?page=<?php echo ($pn - 1) ?>" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+								      <i class="fa fa-arrow-left ms-3"> </i> Previous </a> </td> 
+							<?php 
+								} 
+							?>
+							<td width="70%">  </td>
+							<?php
+								if ($pn + 1 <= $total_pages) {
+							?>
+								<td> <a href="indianActs.php?page=<?php echo ($pn + 1) ?>" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+							         Next  <i class="fa fa-arrow-right ms-3"> </i> </a> 
+								 </td> 
+							</tr>
+							<?php 
+								}
+							?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

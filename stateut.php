@@ -106,6 +106,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 		
 		<div class="container-xxl">
             <div class="container">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3"> State and Capital Name </h4>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<table class="table table-bordered">
 						<thead class="table-light"> 
@@ -138,6 +146,14 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 							?>
 						</tbody> 
 					</table>
+                </div>
+            </div>
+        </div>
+		
+		<div class="container-xxl">
+            <div class="container">
+                <div class="text-left mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
+                    <h4 class="mb-3"> Union Territory and Capital Names </h4>
                 </div>
             </div>
         </div>

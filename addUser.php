@@ -90,7 +90,7 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -98,9 +98,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="user.php" class="nav-item nav-link active"> Add Users </a>
-                    <a href="viewUser.php" class="nav-item nav-link"> View Users </a>
-					<a href="adminHome.php" class="nav-item nav-link"> Admin Home </a>
+                    <a href="user" class="nav-item nav-link active"> Add Users </a>
+                    <a href="viewUser" class="nav-item nav-link"> View Users </a>
+					<a href="adminHome" class="nav-item nav-link"> Admin Home </a>
                 </div>
                 <a href="joinUs.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Login <i class="fa fa-arrow-right ms-3"></i></a>
             </div>

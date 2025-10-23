@@ -49,7 +49,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -57,9 +57,9 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="adminHome.php" class="nav-item nav-link"> Admin Home </a>
-                    <a href="jstHome.php" class="nav-item nav-link"> Java Home </a>
-					<a href="pyHome.php" class="nav-item nav-link"> Python Home </a>
+                    <a href="adminHome" class="nav-item nav-link"> Admin Home </a>
+                    <a href="jstHome" class="nav-item nav-link"> Java Home </a>
+					<a href="pyHome" class="nav-item nav-link"> Python Home </a>
                 </div>
                 <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -88,21 +88,21 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="viewUser.php"> Users </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="viewUser"> Users </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="abbreviation.php"> Abbreviation </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="abbreviation"> Abbreviation </a>
                             </div>
                         </div>
                     </div>
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="countries.php"> Countries </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="countries"> Countries </a>
                             </div>
                         </div>
                     </div>

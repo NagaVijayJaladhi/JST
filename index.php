@@ -181,12 +181,12 @@ include "dbconfig.php";
             <div class="container">
                 <div class="bg-light rounded">
                     <div class="row g-0">
-                        <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 450px;">
                             <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/call-to-action.jpg" style="object-fit: cover;">
+                                <img class="position-absolute w-90 h-85 rounded" src="img/call-to-action.jpg" style="object-fit: cover;">
                             </div>
                         </div>
-                        <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
                                 <h1 class="mb-4"> Become A Knowledge Person </h1>
                                 <p class="mb-4" align="justify">A knowledgeable person is a person who is well-informed and well-knowing. He is well conversant in the area in which he has gained knowledge and understanding. If you want to be knowledgeable in a specific area, then, the pick the area of study and devote the required time to study regularly. </p>
@@ -209,21 +209,21 @@ include "dbconfig.php";
                         <div class="classes-item">
 
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Java Standard Edition </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Java Standard Edition </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Java Enterprise Edition </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Java Enterprise Edition </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Spring Framework </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Spring Framework </a>
                             </div>
                         </div>
                     </div>
@@ -233,21 +233,21 @@ include "dbconfig.php";
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Struts Framework </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Struts Framework </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href="">Hibernate Framework </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs">Hibernate Framework </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Data Base </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Data Base </a>
                             </div>
                         </div>
                     </div>
@@ -257,21 +257,21 @@ include "dbconfig.php";
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Question & Answers </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Question & Answers </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Java Programming </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Java Programming </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
-                                <a class="d-block text-center h3 mt-3 mb-4" href=""> Build & Deployment Tools </a>
+                                <a class="d-block text-center h3 mt-3 mb-4" href="joinUs"> Build & Deployment Tools </a>
                             </div>
                         </div>
                     </div>

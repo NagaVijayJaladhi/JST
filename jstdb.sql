@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2025 at 11:45 PM
+-- Generation Time: Oct 23, 2025 at 06:48 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.2.22
 
@@ -1084,7 +1084,89 @@ INSERT INTO `abbrivation` (`ABBID`, `SHORTFORM`, `FULLFORM`) VALUES
 (1043, 'RSW', 'Regularly Scheduled Work'),
 (1044, 'NWH', 'Night Work Hours'),
 (1045, 'FWS', 'Flexible Work Schedules'),
-(1046, 'HCR', 'Human Capital Reviews');
+(1046, 'HCR', 'Human Capital Reviews'),
+(1047, 'RMC', 'Regional Meteorological Centre'),
+(1048, 'TNSDMA', 'Tamil Nadu State Disaster Management Authority'),
+(1049, 'WDMMA', 'World Directory of Modern Military Aircraft'),
+(1050, 'GAPR', 'Global Air Powers Ranking'),
+(1051, 'CAI', 'Current Active Inventory'),
+(1052, 'USAF', 'United States Air Force'),
+(1053, 'IAF', 'Indian Air Force'),
+(1054, 'RAF', 'Russian Air Force'),
+(1055, 'SMP', 'Special Mission Platforms'),
+(1056, 'CAS', 'Close Air Support'),
+(1057, 'AAF', 'Afghan Air Force'),
+(1058, 'SAF', 'Syrian Air Force'),
+(1059, 'USNA', 'United State Navy Aviation'),
+(1060, 'USN', 'United State Navy'),
+(1061, 'USA', 'United State Army'),
+(1062, 'USM', 'United State Marines'),
+(1063, 'PLAAF', 'Peoples Liberation Army Air Force'),
+(1064, 'CAF', 'Chinese Air Force'),
+(1065, 'JAF', 'Japanese Air Force'),
+(1066, 'IAF', 'Israeli Air Force'),
+(1067, 'FAF', 'French Air Force'),
+(1068, 'UKRAF', 'United Kingdom Royal Air Force'),
+(1069, 'SKAF', 'South Korean Air Force'),
+(1070, 'IAF', 'Italian Air Force'),
+(1071, 'AAF', 'Australian Air Force'),
+(1072, 'CNA', 'Chinese Navy Aviation'),
+(1073, 'BAF', 'Brazilian Air Force'),
+(1074, 'WSV', 'Water Soluble Vitamins'),
+(1075, 'FSV', 'Fat Soluble Vitamins'),
+(1076, 'IMD', 'Indian Meteorological Department'),
+(1077, 'SCV', 'Shared Cultural Values'),
+(1078, 'PRC', 'Political Realignment Concerns'),
+(1079, 'TTP', 'Tehrik-e Taliban Pakistan'),
+(1080, 'TTP', 'Thrombotic Thrombocytopenic Purpura'),
+(1081, 'ITP', 'Immune Thrombocytopenic Purpura'),
+(1082, 'APS', 'Automatic Project Synchronization'),
+(1083, 'IDM', 'Influential Decision Making'),
+(1084, 'PBS', 'Practical Boardroom Skills'),
+(1085, 'AOPL', 'Agent Oriented Programming Languages'),
+(1086, 'CLIL', 'Command Line Interface Languages'),
+(1087, 'CPL', 'Concatenative Programming Languages'),
+(1088, 'CPL', 'Constraint Programming Languages'),
+(1089, 'CBL', 'Curly Bracket Languages'),
+(1090, 'DOL', 'Data Oriented Languages'),
+(1091, 'DTL', 'Decision Table Languages'),
+(1092, 'EPL', 'Educational Programming Languages'),
+(1093, 'FGL', 'Fourth Generation Languages'),
+(1094, 'IDE', 'Interactive Development Environment'),
+(1095, 'VHLL', 'Very High Level Language'),
+(1096, 'HDL', 'Hardware Description Languages'),
+(1097, 'IML', 'Interactive Mode Languages'),
+(1098, 'GCL', 'Garbage Collected Languages'),
+(1099, 'ARC', 'Automatic Reference Counting'),
+(1100, 'LBL', 'List Based Languages'),
+(1101, 'LBL', 'Logic Based Languages'),
+(1102, 'AML', 'Application Macro Languages');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `animals`
+--
+
+CREATE TABLE `animals` (
+  `AID` int(11) NOT NULL,
+  `ANAME` varchar(255) NOT NULL,
+  `KINGDOM` varchar(255) NOT NULL,
+  `PHYLUM` varchar(255) NOT NULL,
+  `CLASS` varchar(255) NOT NULL,
+  `ORDERS` varchar(255) NOT NULL,
+  `FAMILY` varchar(255) NOT NULL,
+  `GENUS` varchar(255) NOT NULL,
+  `SNAME` varchar(255) NOT NULL,
+  `LOCATIONS` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `animals`
+--
+
+INSERT INTO `animals` (`AID`, `ANAME`, `KINGDOM`, `PHYLUM`, `CLASS`, `ORDERS`, `FAMILY`, `GENUS`, `SNAME`, `LOCATIONS`) VALUES
+(1, 'Aardvark', 'Animalia', 'Chordata', 'Mammalia', 'Tubulidentata', 'Orycteropodidae', 'Orycteropus', 'Orycteropus', 'Africa');
 
 -- --------------------------------------------------------
 
@@ -1120,13 +1202,15 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`CID`, `COURSE`, `CTYPE`) VALUES
-(1, 'Java Standard Edition', 'JAVA'),
-(2, 'Java Enterprice Edition', 'JAVA'),
-(3, 'Java Frameworks', 'JAVA'),
-(4, 'Java Build and Development Tools', 'JAVA'),
-(5, 'Java Programming', 'JAVA'),
-(6, 'Question abd Answers', 'JAVA'),
-(7, 'Multiple Choice Questions', 'JAVA');
+(1, 'Java Standard Edition', 'JSE'),
+(2, 'Java Enterprice Edition', 'JEE'),
+(3, 'Java Frameworks', 'JFW'),
+(4, 'Java Programming', 'JP'),
+(5, 'Build and Development Tools', 'BDT'),
+(6, 'Data Base Management System', 'DBMS'),
+(7, 'Question and Answers', 'JQA'),
+(8, 'General Knowledge', 'GK'),
+(9, '', '');
 
 -- --------------------------------------------------------
 
@@ -2449,7 +2533,7 @@ INSERT INTO `indianacts` (`IPAID`, `ACTNAME`, `YEAR`, `ACTNO`) VALUES
 (673, 'Immigration (Carriers’ Liability) Act', '2000', 52),
 (674, 'Central Road Fund Act', '2000', 54),
 (675, 'Indian Council of World Affairs Act', '2001', 29),
-(676, 'Advocates’ Welfare Fund Act', '2001', 45),
+(676, 'Advocates Welfare Fund Act', '2001', 45),
 (677, 'Energy Conservation Act', '2001', 52),
 (678, 'Protection of Plant Varieties and Farmers Rights Act', '2001', 53),
 (679, 'Delimitation Act', '2002', 33),
@@ -11856,9 +11940,18 @@ CREATE TABLE `scientists` (
   `DOD` varchar(255) NOT NULL,
   `BPL` varchar(255) NOT NULL,
   `DPL` varchar(255) NOT NULL,
-  `EQC` varchar(255) NOT NULL,
-  `PHOTO` longblob NOT NULL
+  `EQC` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `scientists`
+--
+
+INSERT INTO `scientists` (`SID`, `SNAME`, `DOB`, `DOD`, `BPL`, `DPL`, `EQC`) VALUES
+(1, 'Isaac Newton', '04 January 1643', '31 March 1727', 'Woolsthorpe-by-Colsterworth, Lincolnshire, England', 'Kensington, Middlesex, England', 'BA & MA, Trinity College, Cambridge'),
+(2, 'Leonhard Euler', '15 April 1707', '18 September 1783', 'Basel, Swiss Confederacy', 'Saint Petersburg, Russian Empire', 'MPhil, University of Basel'),
+(3, 'Gottfried Leibniz', '01 July 1646', '14 November 1716', 'Leipzig, Saxony, Holy Roman Empire', 'Hanover, Electorate of Hanover, Holy Roman Empire', 'BA,MA,LLB, Leipzig University'),
+(4, 'Carl Friedrich Gauss', '30 April 1777', '23 February 1855', 'Brunswick, Principality of Brunswick-Wolfenbuttel, Holy Roman Empire', 'Gottingen, Kingdom of Hanover, German Confederation', 'Phd, University of Helmstedt');
 
 -- --------------------------------------------------------
 
@@ -12151,9 +12244,70 @@ CREATE TABLE `timezone` (
 
 CREATE TABLE `topics` (
   `CTID` int(11) NOT NULL,
-  `TOPIC` int(11) NOT NULL,
-  `CPID` int(11) DEFAULT NULL
+  `TOPIC` varchar(100) NOT NULL,
+  `CTYPE` varchar(50) NOT NULL,
+  `PURL` varchar(50) NOT NULL,
+  `CPID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `topics`
+--
+
+INSERT INTO `topics` (`CTID`, `TOPIC`, `CTYPE`, `PURL`, `CPID`) VALUES
+(1, 'Java History', 'JSE', 'javaHistory', 1),
+(2, 'Declarations', 'JSE', 'declarations', 1),
+(3, 'Java Versions', 'JSE', 'versions', 1),
+(4, 'JIT Compiler', 'JSE', 'jit', 1),
+(5, 'Variable Types', 'JSE', 'variables', 1),
+(6, 'Access Modifiers', 'JSE', 'accessModifiers', 1),
+(7, 'Non Access Modifiers', 'JSE', 'nonAccessModifiers', 1),
+(8, 'Data Types', 'JSE', 'dataType', 1),
+(9, 'Exceptions', 'JSE', 'exception', 1),
+(10, 'Strings Class', 'JSE', 'string', 1),
+(11, 'Inner Classes', 'JSE', 'innerClass', 1),
+(12, 'Input/Output', 'JSE', 'iostreams', 1),
+(13, 'Collection Framework', 'JSE', 'collections', 1),
+(14, 'Stream API', 'JSE', 'stream', 1),
+(15, 'SOLID Principles', 'JSE', 'solidples', 1),
+(16, 'Data Structures', 'JSE', 'dataStructures', 1),
+(17, 'Executor Framework', 'JSE', 'executors', 1),
+(18, 'Lombok', 'JSE', 'lombok', 1),
+(19, 'Two Minute Drill', 'JSE', 'twoMins', 1),
+(20, 'JDBC', 'JEE', 'jdbc', 2),
+(21, 'Servlets', 'JEE', 'servlets', 2),
+(22, 'JSP', 'JEE', 'jsp', 2),
+(23, 'JSTL', 'JEE', '404', 2),
+(24, 'EJB', 'JEE', 'ejb', 2),
+(25, 'JPA', 'JEE', 'jpa', 2),
+(26, 'Design Patterns', 'JEE', 'designPattern', 2),
+(27, 'Mail API ', 'JEE', 'javamail', 2),
+(28, 'Spring', 'JFW', 'spring', 3),
+(29, 'Spring Boot', 'JFW', '404', 3),
+(30, 'Hibernate', 'JFW', 'hibernate', 3),
+(31, 'REST API', 'JFW', 'restapi', 3),
+(32, 'Java Programming', 'JP', 'basicProgramming', 4),
+(33, 'String Programming', 'JP', '404', 4),
+(34, 'Number Pattern', 'JP', 'numberPattern', 4),
+(35, 'Alphabets Pattern', 'JP', 'alphabetPattern', 4),
+(36, 'Apache Ant', 'BDT', '404', 5),
+(37, 'Apache Maven', 'BDT', 'maven', 5),
+(38, 'Gradle', 'BDT', '404', 5),
+(39, 'GIT', 'BDT', 'gitRepo', 5),
+(40, 'Jenkin', 'BDT', 'jenkins', 5),
+(41, 'PCF', 'BDT', 'pcf', 5),
+(42, 'MySQL', 'DBMS', 'mysql', 6),
+(43, 'Mongo DB', 'DBMS', 'mongodb', 6),
+(44, 'Question & Answers', 'JQA', 'qesans', 7),
+(45, 'Self Test Skill', 'JQA', 'qesans', 7),
+(46, 'Abbreviation', 'GK', 'viewAbbreviation', 8),
+(47, 'World History', 'GK', 'worldHistory', 8),
+(48, 'Countries & Capital', 'GK', 'ccc', 8),
+(49, 'Indian History', 'GK', 'indiaHistory', 8),
+(50, 'Geography', 'GK', 'geography', 8),
+(51, 'Railway Station', 'GK', 'railway', 8),
+(52, 'Scientists', 'GK', 'scientists', 8),
+(53, 'Animals', 'GK', 'animals', 8);
 
 -- --------------------------------------------------------
 
@@ -12188,6 +12342,12 @@ INSERT INTO `user` (`USERID`, `FULLNAME`, `USERNAME`, `PASSWORD`, `EMAIL`, `MOBI
 --
 ALTER TABLE `abbrivation`
   ADD PRIMARY KEY (`ABBID`);
+
+--
+-- Indexes for table `animals`
+--
+ALTER TABLE `animals`
+  ADD PRIMARY KEY (`AID`);
 
 --
 -- Indexes for table `countries`
@@ -12303,8 +12463,7 @@ ALTER TABLE `timezone`
 -- Indexes for table `topics`
 --
 ALTER TABLE `topics`
-  ADD PRIMARY KEY (`CTID`),
-  ADD KEY `CPID` (`CPID`);
+  ADD PRIMARY KEY (`CTID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -12314,13 +12473,19 @@ ALTER TABLE `topics`
 -- AUTO_INCREMENT for table `abbrivation`
 --
 ALTER TABLE `abbrivation`
-  MODIFY `ABBID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1047;
+  MODIFY `ABBID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1103;
+
+--
+-- AUTO_INCREMENT for table `animals`
+--
+ALTER TABLE `animals`
+  MODIFY `AID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `CID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `CID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `gkmcq`
@@ -12380,7 +12545,7 @@ ALTER TABLE `railwayinfo`
 -- AUTO_INCREMENT for table `scientists`
 --
 ALTER TABLE `scientists`
-  MODIFY `SID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `SID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `selftest`
@@ -12407,6 +12572,12 @@ ALTER TABLE `stateut`
   MODIFY `SUTID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
+-- AUTO_INCREMENT for table `topics`
+--
+ALTER TABLE `topics`
+  MODIFY `CTID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+
+--
 -- Constraints for dumped tables
 --
 
@@ -12421,12 +12592,6 @@ ALTER TABLE `javafeatures`
 --
 ALTER TABLE `timezone`
   ADD CONSTRAINT `timezone_ibfk_1` FOREIGN KEY (`CTID`) REFERENCES `countries` (`CTID`);
-
---
--- Constraints for table `topics`
---
-ALTER TABLE `topics`
-  ADD CONSTRAINT `topics_ibfk_1` FOREIGN KEY (`CPID`) REFERENCES `courses` (`CID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -49,7 +49,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.php" class="navbar-brand">
+            <a href="home" class="navbar-brand">
                 <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -57,11 +57,11 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="jstHome.php" class="nav-item nav-link"> Java </a>
-                    <a href="pyHome.php" class="nav-item nav-link"> Python </a>
-					<a href="htmlHome.php" class="nav-item nav-link"> HTML </a>
-                    <a href="dbHome.php" class="nav-item nav-link"> Data Base </a>
-					<a href="gkHome.php" class="nav-item nav-link"> General Knowledge </a>
+                    <a href="jstHome" class="nav-item nav-link"> Java </a>
+                    <a href="pyHome" class="nav-item nav-link"> Python </a>
+					<a href="htmlHome" class="nav-item nav-link"> HTML </a>
+                    <a href="dbHome" class="nav-item nav-link"> Data Base </a>
+					<a href="gkHome" class="nav-item nav-link"> General Knowledge </a>
                 </div>
                 <a href="logout.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block"> Logout <i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -87,7 +87,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                         <h1 class="display-1"> COMING SOON </h1>
                         <h1 class="mb-4"> Page is Under Development Stage </h1>
                         <p class="mb-4">We are Sorry, The page you have looked for does not exist in our Web Site! Our Web Site Under Construction, follow us for update now ! </p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="jstHome.php"> Go Back To Home </a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="jstHome"> Go Back To Home </a>
                     </div>
                 </div>
             </div>

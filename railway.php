@@ -88,6 +88,22 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
         </div>
 		
 		<div class="container-xxl">
+			<div class="container">
+				<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+					<form name="bwdatesdata" action="" method="post">
+						<table class="table table-borderless">
+							<tr>
+								<td> Enter Railway Station Name </td>
+								<td> <input id="searchdata" type="text" name="searchdata" required="true" class="form-control"> </td>
+								<td> <button class="btn-primary btn" type="submit" name="search"> Submit </button> </td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-xxl">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
 					<table class="table table-bordered">
@@ -98,23 +114,45 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 						</thead>
 						<tbody>		
 							<?php
+								$home = 0;
 								if (isset($_GET["page"])) { 
 									$pn  = $_GET["page"]; 
 								} else { 
 									$pn = 1; 
-								};
+								}
+								
+								if(isset($_POST['search'])) { 
+									$sdata = $_POST['searchdata'];
+									$home = 1;
+								}
+								
 								$limit = 600;
-								$count = "SELECT COUNT(*) AS TOTAL FROM railwayinfo";  
+								$count = "";
+								
+								if (empty($sdata)) {
+									$count = "SELECT COUNT(*) AS TOTAL FROM railwayinfo";  
+								} else {
+									$count = "SELECT COUNT(*) AS TOTAL FROM railwayinfo WHERE SNAME = '$sdata'";  
+								}
+								
 								$rs_result = $conn->query($count);
-								$total_records = "";								
+								$total_records = "";	
+								
 								if ($rs_result->num_rows > 0) {
 									while ($row = $rs_result->fetch_assoc()) {
 										$total_records = $row['TOTAL'];
 									}
 								}
+								
 								$total_pages = ceil($total_records / $limit);
 								$start_from = ($pn-1) * $limit;  
-								$sql = "SELECT RSCID, UPPER(SNAME) AS NAME, SCODE, SCATEGORY, SDIVISION, SZONE, UPPER(SDISTRICT) AS DISTRICT, SSTATE FROM railwayinfo LIMIT $start_from, $limit";
+								
+								if (empty($sdata)) {
+									$sql = "SELECT RSCID, UPPER(SNAME) AS NAME, SCODE, SCATEGORY, SDIVISION, SZONE, UPPER(SDISTRICT) AS DISTRICT, SSTATE FROM railwayinfo LIMIT $start_from, $limit";
+								} else {
+									$sql = "SELECT RSCID, UPPER(SNAME) AS NAME, SCODE, SCATEGORY, SDIVISION, SZONE, UPPER(SDISTRICT) AS DISTRICT, SSTATE FROM railwayinfo WHERE SNAME = '$sdata'";
+								}
+								
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0) {
 									while ($row = $result->fetch_assoc()) {
@@ -144,6 +182,15 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1500px;">
                      <table class="table table-borderless">
                         <tbody align="left">
+							<?php 
+								if ($home == 1) {
+							?>
+                            <tr>   
+								<td> <a href="railway.php" class="btn btn-primary rounded-pill d-none d-lg-block"> 
+								      <i class="fa fa-arrow-left ms-3"> </i> Back Home </a> </td> 
+							<?php 
+								} 
+							?>
 							<?php 
 								if ($pn - 1 >= 1) {
 							?>
