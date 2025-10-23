@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-include "dbconfig.php";
+include_once "dbconfig.php";
 session_start();
 $inactivity_time = 10 * 60;
 if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp']) > $inactivity_time) {
@@ -44,13 +44,13 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
 <body>
     <div class="container-xxl bg-white p-0">
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" aria-hidden="true"></div>
+				<output role="status" aria-live="polite" aria-atomic="true" class="visually-hidden">Loading…</output>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0" aria-labelledby="primary-nav-label">
             <a href="home" class="navbar-brand">
-                <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;"> Jaladhi Soft Technology </h1>
+                <h1 class="m-0 text-primary"> <img src="img/JST.png" style="width: 80px; height: 80px;" alt="JST"> Jaladhi Soft Technology </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -104,7 +104,7 @@ if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp'])
                     <div class="col-lg-2 col-md-6">
                          <a href="<?php echo $row['SMURL']; ?>"> <h3 class="text-white mb-4"> <?php echo $row['SMNAME']; ?> </h3> </a>
                     </div>
-					<?php       
+					<?php
 							}
 						}
 					?>
