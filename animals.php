@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-include "dbconfig.php";
+include_once "dbconfig.php";
 session_start();
 $inactivity_time = 10 * 60;
 if (isset($_SESSION['last_timestamp']) && (time() - $_SESSION['last_timestamp']) > $inactivity_time) {
